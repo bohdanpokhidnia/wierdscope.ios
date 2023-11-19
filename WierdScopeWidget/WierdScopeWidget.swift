@@ -114,7 +114,8 @@ struct WierdScopeWidgetEntryView : View {
     var body: some View {
         MainTextItem(
             text: entry.foresight,
-            size: entry.fontSize
+            size: entry.fontSize,
+            isSecureText: false
         )
     }
 }

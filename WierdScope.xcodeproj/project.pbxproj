@@ -76,6 +76,9 @@
 		F790633E2AFD31FE008F7851 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F790633D2AFD31FE008F7851 /* Sign.swift */; };
 		F79600172B0358FF0045AB75 /* MainTextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79600162B0358FF0045AB75 /* MainTextItem.swift */; };
 		F796001A2B035FF90045AB75 /* ForesightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79600192B035FF90045AB75 /* ForesightView.swift */; };
+		F797DD192B0A7DEE003E70E1 /* SecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797DD182B0A7DEE003E70E1 /* SecureView.swift */; };
+		F797DD1A2B0A909A003E70E1 /* SecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797DD182B0A7DEE003E70E1 /* SecureView.swift */; };
+		F797DD1B2B0A92B7003E70E1 /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* SizeKey.swift */; };
 		F7CA5A3D2AFE239000A44597 /* ForesightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3C2AFE239000A44597 /* ForesightViewModel.swift */; };
 		F7CA5A402AFE289400A44597 /* FirestoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */; };
 		F7CA5A422AFE28AE00A44597 /* FirestoreCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */; };
@@ -104,7 +107,7 @@
 		F7D2BF3C2B08E81700DC95B5 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B14802B050D8D00629B50 /* DateFormatting.swift */; };
 		F7E3D0852B01178E0062D24C /* SignPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0842B01178E0062D24C /* SignPickerItem.swift */; };
 		F7E3D0882B011D9D0062D24C /* OnboardingTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */; };
-		F7E3D08A2B0130610062D24C /* ScreenSizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* ScreenSizeKey.swift */; };
+		F7E3D08A2B0130610062D24C /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* SizeKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +175,7 @@
 		F790633D2AFD31FE008F7851 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 		F79600162B0358FF0045AB75 /* MainTextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextItem.swift; sourceTree = "<group>"; };
 		F79600192B035FF90045AB75 /* ForesightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightView.swift; sourceTree = "<group>"; };
+		F797DD182B0A7DEE003E70E1 /* SecureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureView.swift; sourceTree = "<group>"; };
 		F7CA5A3C2AFE239000A44597 /* ForesightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightViewModel.swift; sourceTree = "<group>"; };
 		F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreServiceProtocol.swift; sourceTree = "<group>"; };
 		F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollection.swift; sourceTree = "<group>"; };
@@ -191,7 +195,7 @@
 		F7D2BF2D2B08DB0900DC95B5 /* WierdScopeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WierdScopeWidgetExtension.entitlements; sourceTree = "<group>"; };
 		F7E3D0842B01178E0062D24C /* SignPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPickerItem.swift; sourceTree = "<group>"; };
 		F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTitleView.swift; sourceTree = "<group>"; };
-		F7E3D0892B0130610062D24C /* ScreenSizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSizeKey.swift; sourceTree = "<group>"; };
+		F7E3D0892B0130610062D24C /* SizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +390,7 @@
 			children = (
 				F70B14862B06079D00629B50 /* LoadingView.swift */,
 				F70B14912B08C2A800629B50 /* ForesightEmpyView.swift */,
+				F797DD182B0A7DEE003E70E1 /* SecureView.swift */,
 				F79600162B0358FF0045AB75 /* MainTextItem.swift */,
 				F722D3322B0385D100076005 /* AppBannerView.swift */,
 			);
@@ -420,7 +425,7 @@
 				F732BF062AFD55E800C846B6 /* FallbackCase.swift */,
 				F7CA5A522AFE478200A44597 /* Pallete.swift */,
 				F70B14802B050D8D00629B50 /* DateFormatting.swift */,
-				F7E3D0892B0130610062D24C /* ScreenSizeKey.swift */,
+				F7E3D0892B0130610062D24C /* SizeKey.swift */,
 				F722D3302B037C0E00076005 /* BoundsAnchorKey.swift */,
 			);
 			path = Core;
@@ -659,6 +664,7 @@
 				F7D2BF372B08E14500DC95B5 /* FirestoreService.swift in Sources */,
 				F775BA1C2B08CAC50049E391 /* WierdScopeWidget.swift in Sources */,
 				F7D2BF3B2B08E80E00DC95B5 /* Date+Ext.swift in Sources */,
+				F797DD1B2B0A92B7003E70E1 /* SizeKey.swift in Sources */,
 				F7D2BF342B08E13D00DC95B5 /* FirestoreCollection.swift in Sources */,
 				F775BA292B08CB820049E391 /* Sign.swift in Sources */,
 				F775BA2A2B08CBB00049E391 /* FallbackCase.swift in Sources */,
@@ -666,6 +672,7 @@
 				F775BA272B08CB4F0049E391 /* Foresight.swift in Sources */,
 				F775BA1A2B08CAC50049E391 /* WierdScopeWidgetBundle.swift in Sources */,
 				F7D2BF252B08CEEF00DC95B5 /* MainTextItem.swift in Sources */,
+				F797DD1A2B0A909A003E70E1 /* SecureView.swift in Sources */,
 				F7D2BF3C2B08E81700DC95B5 /* DateFormatting.swift in Sources */,
 				F7D2BF242B08CECE00DC95B5 /* Pallete.swift in Sources */,
 			);
@@ -692,7 +699,7 @@
 				F732BF0A2AFD56F700C846B6 /* FirestoreService.swift in Sources */,
 				F722D33D2B04B50600076005 /* User.swift in Sources */,
 				F70B148E2B07768F00629B50 /* SettingsViewModel.swift in Sources */,
-				F7E3D08A2B0130610062D24C /* ScreenSizeKey.swift in Sources */,
+				F7E3D08A2B0130610062D24C /* SizeKey.swift in Sources */,
 				F7CA5A622B00E49200A44597 /* ActionButtonView.swift in Sources */,
 				F70B14922B08C2A800629B50 /* ForesightEmpyView.swift in Sources */,
 				F7CA5A442AFE28BE00A44597 /* FirestoreError.swift in Sources */,
@@ -712,6 +719,7 @@
 				F796001A2B035FF90045AB75 /* ForesightView.swift in Sources */,
 				F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */,
 				F7E3D0882B011D9D0062D24C /* OnboardingTitleView.swift in Sources */,
+				F797DD192B0A7DEE003E70E1 /* SecureView.swift in Sources */,
 				F722D3372B04AFD600076005 /* View+Ext.swift in Sources */,
 				F7CA5A422AFE28AE00A44597 /* FirestoreCollection.swift in Sources */,
 				F7CA5A602B00DD3500A44597 /* String+Ext.swift in Sources */,
