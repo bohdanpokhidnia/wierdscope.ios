@@ -21,7 +21,7 @@ enum DateFormatterFabric {
 }
 
 enum CommonDateFormaters {
-    static var formatters = [String: DateFormatter]()
+    static var formatters: [String: DateFormatter] = [:]
 
     static func formatter(for style: DateFormatStyle) -> DateFormatter {
        if let formatter = formatters[style.rawValue] {
