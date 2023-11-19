@@ -53,12 +53,17 @@ struct ForesightView: View {
                         GeometryReader { (proxy) in
                             if let anchor = value["foresight"] {
                                 let rect = proxy[anchor]
-                                let offsetY = rect.minY + rect.height + 8
+                                let offsetY = rect.minY + rect.height + 16
                                 
-                                AppBannerView(appName: viewModel.appName)
-                                    .frame(maxWidth: .infinity)
-                                    .offset(y: offsetY)
-                                    .opacity(isSharePresented ? 1.0 : 0.0)
+                                VStack(spacing: 16) {
+                                    Divider()
+                                        .padding(.horizontal)
+                                    
+                                    AppBannerView(appName: viewModel.appName)
+                                }
+                                .frame(maxWidth: .infinity)
+                                .offset(y: offsetY)
+                                .opacity(isSharePresented ? 1.0 : 0.0)
                             }
                         }
                     }
