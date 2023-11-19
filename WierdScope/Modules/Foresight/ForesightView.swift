@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ForesightView: View {
-    @Environment(\.scenePhase) var scenePhase
+    @Environment(\.scenePhase) private var scenePhase
     @StateObject private var viewModel = ForesightViewModel()
     @Binding var isSharePresented: Bool
     let sign: Sign

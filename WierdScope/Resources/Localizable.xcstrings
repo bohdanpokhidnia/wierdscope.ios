@@ -46,7 +46,7 @@
         },
         "uk" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Шукаємо нові, що впораються з вашим ритмом життя"
           }
         }
@@ -85,6 +85,9 @@
           }
         }
       }
+    },
+    "My Widget" : {
+
     },
     "onboarding_choose_sign" : {
       "extractionState" : "manual",
@@ -235,6 +238,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змінити знак"
+          }
+        }
+      }
+    },
+    "This is an example widget." : {
+
+    },
+    "widget_empty_sign" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tell us which stars are working for you so we can show you predictions"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розкажіть нам які зірки працюють на вас, щоб ми могли показувати передбачення"
           }
         }
       }

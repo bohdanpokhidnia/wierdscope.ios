@@ -27,6 +27,7 @@ struct SettingsView: View {
                 )
             }
             
+            #if DEBUG
             Button(
                 action: {
                     viewModel.openAppSettings()
@@ -37,6 +38,7 @@ struct SettingsView: View {
                     )
                 }
             )
+            #endif
         }
         .background(.backgroundPrimary)
         .navigationTitle("settings".localize)

@@ -38,4 +38,43 @@ extension FirestoreService: FirestoreServiceProtocol {
         
         return items
     }
+    
+    func fetchItems<CollectionItem: Decodable>(
+        _ item: CollectionItem.Type,
+        from collection: FirestoreCollection,
+        completion: @escaping (([CollectionItem]?) -> Void)
+    ) {
+        let firestore = Firestore.firestore()
+        let decoder = self.decoder
+        
+        firestore.collection(collection.rawValue).getDocuments { (snapshot, error) in
+            guard error == nil else {
+                print(error!)
+                completion(nil)
+                return
+            }
+            
+            guard let documents = snapshot?.documents else {
+                completion(nil)
+                return
+            }
+            
+            let documentData = documents.map { $0.data() }
+            
+            do {
+                var items: [CollectionItem] = []
+                
+                for data in documentData {
+                    let jsonData = try JSONSerialization.data(withJSONObject: data)
+                    let item = try decoder.decode(item.self, from: jsonData)
+                    items.append(item)
+                }
+                
+                completion(items)
+            } catch {
+                completion(nil)
+                print(error)
+            }
+        }
+    }
 }

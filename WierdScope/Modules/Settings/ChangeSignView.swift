@@ -14,8 +14,6 @@ struct ChangeSignView: View {
     @State private var selectedSign: Sign?
     var users: [User]
     
-//    @Query private var users: [User]
-    
     var body: some View {
         VStack(spacing: 16) {
             OnboardingTitleView(title: "onboarding_choose_sign".localize)
@@ -23,12 +21,7 @@ struct ChangeSignView: View {
             List {
                 ForEach(viewModel.signs, id: \.self) { (sign) in
                     SignPickerItem(sign: sign) {
-                        guard let user = users.first else { return }
-                        
-                        print("change on \(sign)")
-//                        users.first?.sign = sign
-                        
-                        user.sign = sign
+                        updateUser(sign: sign)
                         dismiss()
                     }
                 }
@@ -52,8 +45,11 @@ struct ChangeSignView: View {
         }
     }
     
-    func saveUser() {
-        
+    func updateUser(sign: Sign) {
+        guard let user = users.first else {
+            return
+        }
+        user.sign = sign
     }
 }
 
@@ -61,6 +57,6 @@ struct ChangeSignView: View {
     NavigationStack {
         ChangeSignView(users: [User(sign: .cancer)])
             .environmentObject(SettingsViewModel())
-//            .modelContainer(for: [User.self], inMemory: true)
+            .modelContainer(for: [User.self], inMemory: true)
     }
 }

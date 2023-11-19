@@ -31,6 +31,16 @@
 		F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */; };
 		F75DF5F82B00FD7E008D22F4 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F72B00FD7E008D22F4 /* UINavigationController.swift */; };
 		F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */; };
+		F775BA152B08CAC50049E391 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F775BA142B08CAC50049E391 /* WidgetKit.framework */; };
+		F775BA172B08CAC50049E391 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F775BA162B08CAC50049E391 /* SwiftUI.framework */; };
+		F775BA1A2B08CAC50049E391 /* WierdScopeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F775BA192B08CAC50049E391 /* WierdScopeWidgetBundle.swift */; };
+		F775BA1C2B08CAC50049E391 /* WierdScopeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F775BA1B2B08CAC50049E391 /* WierdScopeWidget.swift */; };
+		F775BA1E2B08CAC60049E391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F775BA1D2B08CAC60049E391 /* Assets.xcassets */; };
+		F775BA222B08CAC60049E391 /* WierdScopeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F775BA122B08CAC50049E391 /* WierdScopeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F775BA272B08CB4F0049E391 /* Foresight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF022AFD40C300C846B6 /* Foresight.swift */; };
+		F775BA282B08CB520049E391 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D33C2B04B50600076005 /* User.swift */; };
+		F775BA292B08CB820049E391 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F790633D2AFD31FE008F7851 /* Sign.swift */; };
+		F775BA2A2B08CBB00049E391 /* FallbackCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF062AFD55E800C846B6 /* FallbackCase.swift */; };
 		F79062F32AFD2CAB008F7851 /* WierdScopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79062F22AFD2CAB008F7851 /* WierdScopeApp.swift */; };
 		F79062F52AFD2CAB008F7851 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79062F42AFD2CAB008F7851 /* MainView.swift */; };
 		F79062F72AFD2CAD008F7851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79062F62AFD2CAD008F7851 /* Assets.xcassets */; };
@@ -78,10 +88,48 @@
 		F7CA5A622B00E49200A44597 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A612B00E49200A44597 /* ActionButtonView.swift */; };
 		F7CA5A642B00ECC700A44597 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A632B00ECC700A44597 /* OnboardingView.swift */; };
 		F7CA5A662B00F32800A44597 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A652B00F32800A44597 /* StarsView.swift */; };
+		F7D2BF242B08CECE00DC95B5 /* Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A522AFE478200A44597 /* Pallete.swift */; };
+		F7D2BF252B08CEEF00DC95B5 /* MainTextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79600162B0358FF0045AB75 /* MainTextItem.swift */; };
+		F7D2BF2A2B08CFC300DC95B5 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2BF282B08CFA400DC95B5 /* Montserrat.ttf */; };
+		F7D2BF2B2B08CFC500DC95B5 /* IBMPlexSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2BF292B08CFA400DC95B5 /* IBMPlexSerif-Regular.ttf */; };
+		F7D2BF2E2B08DD6600DC95B5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A5F2B00DD3500A44597 /* String+Ext.swift */; };
+		F7D2BF332B08DFBC00DC95B5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */; };
+		F7D2BF342B08E13D00DC95B5 /* FirestoreCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */; };
+		F7D2BF352B08E14000DC95B5 /* FirestoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A432AFE28BE00A44597 /* FirestoreError.swift */; };
+		F7D2BF362B08E14200DC95B5 /* FirestoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */; };
+		F7D2BF372B08E14500DC95B5 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF092AFD56F700C846B6 /* FirestoreService.swift */; };
+		F7D2BF392B08E1B300DC95B5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F7D2BF382B08E1B300DC95B5 /* FirebaseFirestore */; };
+		F7D2BF3A2B08E5A300DC95B5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F70B147E2B0509C400629B50 /* GoogleService-Info.plist */; };
+		F7D2BF3B2B08E80E00DC95B5 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B14822B050E1000629B50 /* Date+Ext.swift */; };
+		F7D2BF3C2B08E81700DC95B5 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B14802B050D8D00629B50 /* DateFormatting.swift */; };
 		F7E3D0852B01178E0062D24C /* SignPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0842B01178E0062D24C /* SignPickerItem.swift */; };
 		F7E3D0882B011D9D0062D24C /* OnboardingTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */; };
 		F7E3D08A2B0130610062D24C /* ScreenSizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* ScreenSizeKey.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F775BA202B08CAC60049E391 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F79062E72AFD2CAB008F7851 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F775BA112B08CAC50049E391;
+			remoteInfo = WierdScopeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F775BA232B08CAC60049E391 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F775BA222B08CAC60049E391 /* WierdScopeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F70B147E2B0509C400629B50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -108,6 +156,13 @@
 		F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelfView.swift; sourceTree = "<group>"; };
 		F75DF5F72B00FD7E008D22F4 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSignView.swift; sourceTree = "<group>"; };
+		F775BA122B08CAC50049E391 /* WierdScopeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WierdScopeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F775BA142B08CAC50049E391 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F775BA162B08CAC50049E391 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F775BA192B08CAC50049E391 /* WierdScopeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WierdScopeWidgetBundle.swift; sourceTree = "<group>"; };
+		F775BA1B2B08CAC50049E391 /* WierdScopeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WierdScopeWidget.swift; sourceTree = "<group>"; };
+		F775BA1D2B08CAC60049E391 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F775BA1F2B08CAC60049E391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F79062EF2AFD2CAB008F7851 /* WierdScope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WierdScope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F79062F22AFD2CAB008F7851 /* WierdScopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WierdScopeApp.swift; sourceTree = "<group>"; };
 		F79062F42AFD2CAB008F7851 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -130,12 +185,26 @@
 		F7CA5A612B00E49200A44597 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		F7CA5A632B00ECC700A44597 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		F7CA5A652B00F32800A44597 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		F7D2BF282B08CFA400DC95B5 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
+		F7D2BF292B08CFA400DC95B5 /* IBMPlexSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSerif-Regular.ttf"; sourceTree = "<group>"; };
+		F7D2BF2C2B08DAFD00DC95B5 /* WierdScope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WierdScope.entitlements; sourceTree = "<group>"; };
+		F7D2BF2D2B08DB0900DC95B5 /* WierdScopeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WierdScopeWidgetExtension.entitlements; sourceTree = "<group>"; };
 		F7E3D0842B01178E0062D24C /* SignPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPickerItem.swift; sourceTree = "<group>"; };
 		F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTitleView.swift; sourceTree = "<group>"; };
 		F7E3D0892B0130610062D24C /* ScreenSizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSizeKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F775BA0F2B08CAC50049E391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F775BA172B08CAC50049E391 /* SwiftUI.framework in Frameworks */,
+				F775BA152B08CAC50049E391 /* WidgetKit.framework in Frameworks */,
+				F7D2BF392B08E1B300DC95B5 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F79062EC2AFD2CAB008F7851 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,10 +297,32 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		F775BA132B08CAC50049E391 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F775BA142B08CAC50049E391 /* WidgetKit.framework */,
+				F775BA162B08CAC50049E391 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F775BA182B08CAC50049E391 /* WierdScopeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F775BA192B08CAC50049E391 /* WierdScopeWidgetBundle.swift */,
+				F775BA1B2B08CAC50049E391 /* WierdScopeWidget.swift */,
+				F7D2BF2F2B08DD8A00DC95B5 /* Resources */,
+			);
+			path = WierdScopeWidget;
+			sourceTree = "<group>";
+		};
 		F79062E62AFD2CAB008F7851 = {
 			isa = PBXGroup;
 			children = (
+				F7D2BF2D2B08DB0900DC95B5 /* WierdScopeWidgetExtension.entitlements */,
 				F79062F12AFD2CAB008F7851 /* WierdScope */,
+				F775BA182B08CAC50049E391 /* WierdScopeWidget */,
+				F775BA132B08CAC50049E391 /* Frameworks */,
 				F79062F02AFD2CAB008F7851 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -240,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				F79062EF2AFD2CAB008F7851 /* WierdScope.app */,
+				F775BA122B08CAC50049E391 /* WierdScopeWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,6 +339,7 @@
 		F79062F12AFD2CAB008F7851 /* WierdScope */ = {
 			isa = PBXGroup;
 			children = (
+				F7D2BF2C2B08DAFD00DC95B5 /* WierdScope.entitlements */,
 				F790633A2AFD2E5E008F7851 /* Application */,
 				F7CA5A512AFE475600A44597 /* Core */,
 				F732BF082AFD56C600C846B6 /* Services */,
@@ -386,6 +479,25 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		F7D2BF2F2B08DD8A00DC95B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2BF302B08DE0600DC95B5 /* Fonts */,
+				F775BA1D2B08CAC60049E391 /* Assets.xcassets */,
+				F775BA1F2B08CAC60049E391 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7D2BF302B08DE0600DC95B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F7D2BF282B08CFA400DC95B5 /* Montserrat.ttf */,
+				F7D2BF292B08CFA400DC95B5 /* IBMPlexSerif-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F7E3D0862B0117B30062D24C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +511,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F775BA112B08CAC50049E391 /* WierdScopeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F775BA262B08CAC60049E391 /* Build configuration list for PBXNativeTarget "WierdScopeWidgetExtension" */;
+			buildPhases = (
+				F775BA0E2B08CAC50049E391 /* Sources */,
+				F775BA0F2B08CAC50049E391 /* Frameworks */,
+				F775BA102B08CAC50049E391 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WierdScopeWidgetExtension;
+			packageProductDependencies = (
+				F7D2BF382B08E1B300DC95B5 /* FirebaseFirestore */,
+			);
+			productName = WierdScopeWidgetExtension;
+			productReference = F775BA122B08CAC50049E391 /* WierdScopeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F79062EE2AFD2CAB008F7851 /* WierdScope */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F79062FD2AFD2CAD008F7851 /* Build configuration list for PBXNativeTarget "WierdScope" */;
@@ -406,10 +538,12 @@
 				F79062EB2AFD2CAB008F7851 /* Sources */,
 				F79062EC2AFD2CAB008F7851 /* Frameworks */,
 				F79062ED2AFD2CAB008F7851 /* Resources */,
+				F775BA232B08CAC60049E391 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F775BA212B08CAC60049E391 /* PBXTargetDependency */,
 			);
 			name = WierdScope;
 			packageProductDependencies = (
@@ -455,6 +589,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					F775BA112B08CAC50049E391 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					F79062EE2AFD2CAB008F7851 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -478,11 +615,24 @@
 			projectRoot = "";
 			targets = (
 				F79062EE2AFD2CAB008F7851 /* WierdScope */,
+				F775BA112B08CAC50049E391 /* WierdScopeWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F775BA102B08CAC50049E391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F775BA1E2B08CAC60049E391 /* Assets.xcassets in Resources */,
+				F7D2BF2B2B08CFC500DC95B5 /* IBMPlexSerif-Regular.ttf in Resources */,
+				F7D2BF3A2B08E5A300DC95B5 /* GoogleService-Info.plist in Resources */,
+				F7D2BF332B08DFBC00DC95B5 /* Localizable.xcstrings in Resources */,
+				F7D2BF2A2B08CFC300DC95B5 /* Montserrat.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F79062ED2AFD2CAB008F7851 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,6 +649,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F775BA0E2B08CAC50049E391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7D2BF352B08E14000DC95B5 /* FirestoreError.swift in Sources */,
+				F7D2BF2E2B08DD6600DC95B5 /* String+Ext.swift in Sources */,
+				F775BA282B08CB520049E391 /* User.swift in Sources */,
+				F7D2BF372B08E14500DC95B5 /* FirestoreService.swift in Sources */,
+				F775BA1C2B08CAC50049E391 /* WierdScopeWidget.swift in Sources */,
+				F7D2BF3B2B08E80E00DC95B5 /* Date+Ext.swift in Sources */,
+				F7D2BF342B08E13D00DC95B5 /* FirestoreCollection.swift in Sources */,
+				F775BA292B08CB820049E391 /* Sign.swift in Sources */,
+				F775BA2A2B08CBB00049E391 /* FallbackCase.swift in Sources */,
+				F7D2BF362B08E14200DC95B5 /* FirestoreServiceProtocol.swift in Sources */,
+				F775BA272B08CB4F0049E391 /* Foresight.swift in Sources */,
+				F775BA1A2B08CAC50049E391 /* WierdScopeWidgetBundle.swift in Sources */,
+				F7D2BF252B08CEEF00DC95B5 /* MainTextItem.swift in Sources */,
+				F7D2BF3C2B08E81700DC95B5 /* DateFormatting.swift in Sources */,
+				F7D2BF242B08CECE00DC95B5 /* Pallete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F79062EB2AFD2CAB008F7851 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -549,7 +721,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F775BA212B08CAC60049E391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F775BA112B08CAC50049E391 /* WierdScopeWidgetExtension */;
+			targetProxy = F775BA202B08CAC60049E391 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F775BA242B08CAC60049E391 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WierdScopeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S8AVD2TKW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WierdScopeWidget/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WierdScopeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wierdscope.app.WierdScopeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F775BA252B08CAC60049E391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WierdScopeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3S8AVD2TKW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WierdScopeWidget/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WierdScopeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wierdscope.app.WierdScopeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F79062FB2AFD2CAD008F7851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -672,8 +908,10 @@
 		F79062FE2AFD2CAD008F7851 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WierdScope/WierdScope.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WierdScope/Preview Content\"";
@@ -708,8 +946,10 @@
 		F79062FF2AFD2CAD008F7851 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WierdScope/WierdScope.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WierdScope/Preview Content\"";
@@ -744,6 +984,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F775BA262B08CAC60049E391 /* Build configuration list for PBXNativeTarget "WierdScopeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F775BA242B08CAC60049E391 /* Debug */,
+				F775BA252B08CAC60049E391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F79062EA2AFD2CAB008F7851 /* Build configuration list for PBXProject "WierdScope" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -910,6 +1159,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F79063032AFD2DED008F7851 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		F7D2BF382B08E1B300DC95B5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F79063032AFD2DED008F7851 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
