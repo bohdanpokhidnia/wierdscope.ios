@@ -15,9 +15,10 @@ struct AppBannerView: View {
             Button(
                 action: {},
                 label: {
-                    HStack(spacing: 16) {
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(.white)
+                    HStack(spacing: 4) {
+                        Image(.appBanner)
+                            .resizable()
+                            .scaledToFit()
                             .frame(width: 30, height: 30)
                         
                         Text(appName)
