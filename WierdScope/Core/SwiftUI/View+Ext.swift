@@ -16,4 +16,10 @@ extension View {
         }
         return image
     }
+    
+    @ViewBuilder
+    func enableFullSwipePop(_ isEnabled: Bool) -> some View {
+        self
+            .modifier(FullSwipeModifier(isEnabled: isEnabled))
+    }
 }

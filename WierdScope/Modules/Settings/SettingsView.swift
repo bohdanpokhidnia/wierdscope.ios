@@ -68,7 +68,7 @@ struct SettingsView: View {
 }
 
 #Preview {
-    NavigationStack {
+    FullSwipeNavigationStack {
         SettingsView(sign: .capricorn)
     }
 }

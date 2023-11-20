@@ -25,11 +25,16 @@
 		F732BF052AFD50ED00C846B6 /* ApplicationCheckProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF042AFD50ED00C846B6 /* ApplicationCheckProvider.swift */; };
 		F732BF072AFD55E800C846B6 /* FallbackCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF062AFD55E800C846B6 /* FallbackCase.swift */; };
 		F732BF0A2AFD56F700C846B6 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF092AFD56F700C846B6 /* FirestoreService.swift */; };
+		F74EF5F02B0B60170026C601 /* FullSwipeNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5EF2B0B60170026C601 /* FullSwipeNavigationStack.swift */; };
+		F74EF5F22B0B61590026C601 /* UIVIew+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F12B0B61590026C601 /* UIVIew+Ext.swift */; };
+		F74EF5F42B0B6FB40026C601 /* FullSwipeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */; };
+		F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F72B0B70320026C601 /* PopNotificationID.swift */; };
+		F74EF5FA2B0B70750026C601 /* EnviromentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */; };
 		F75DF5EF2B00F529008D22F4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */; };
 		F75DF5F12B00F74A008D22F4 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F02B00F74A008D22F4 /* FeatureView.swift */; };
 		F75DF5F32B00F7ED008D22F4 /* Harmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F22B00F7ED008D22F4 /* Harmony.swift */; };
 		F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */; };
-		F75DF5F82B00FD7E008D22F4 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F72B00FD7E008D22F4 /* UINavigationController.swift */; };
+		F75DF5F82B00FD7E008D22F4 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */; };
 		F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */; };
 		F775BA152B08CAC50049E391 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F775BA142B08CAC50049E391 /* WidgetKit.framework */; };
 		F775BA172B08CAC50049E391 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F775BA162B08CAC50049E391 /* SwiftUI.framework */; };
@@ -153,11 +158,16 @@
 		F732BF042AFD50ED00C846B6 /* ApplicationCheckProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCheckProvider.swift; sourceTree = "<group>"; };
 		F732BF062AFD55E800C846B6 /* FallbackCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackCase.swift; sourceTree = "<group>"; };
 		F732BF092AFD56F700C846B6 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		F74EF5EF2B0B60170026C601 /* FullSwipeNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSwipeNavigationStack.swift; sourceTree = "<group>"; };
+		F74EF5F12B0B61590026C601 /* UIVIew+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Ext.swift"; sourceTree = "<group>"; };
+		F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSwipeModifier.swift; sourceTree = "<group>"; };
+		F74EF5F72B0B70320026C601 /* PopNotificationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopNotificationID.swift; sourceTree = "<group>"; };
+		F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnviromentValues+Ext.swift"; sourceTree = "<group>"; };
 		F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F75DF5F02B00F74A008D22F4 /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
 		F75DF5F22B00F7ED008D22F4 /* Harmony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harmony.swift; sourceTree = "<group>"; };
 		F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelfView.swift; sourceTree = "<group>"; };
-		F75DF5F72B00FD7E008D22F4 /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
 		F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSignView.swift; sourceTree = "<group>"; };
 		F775BA122B08CAC50049E391 /* WierdScopeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WierdScopeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F775BA142B08CAC50049E391 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -280,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				F722D3362B04AFD600076005 /* View+Ext.swift */,
+				F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -292,11 +303,22 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		F74EF5F62B0B6FC00026C601 /* FullSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				F74EF5EF2B0B60170026C601 /* FullSwipeNavigationStack.swift */,
+				F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */,
+				F74EF5F72B0B70320026C601 /* PopNotificationID.swift */,
+			);
+			path = FullSwipe;
+			sourceTree = "<group>";
+		};
 		F75DF5F62B00FD64008D22F4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F75DF5F72B00FD7E008D22F4 /* UINavigationController.swift */,
+				F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */,
 				F722D3392B04B06400076005 /* UIApplication+Ext.swift */,
+				F74EF5F12B0B61590026C601 /* UIVIew+Ext.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -422,6 +444,7 @@
 			children = (
 				F7CA5A5D2B00DD1E00A44597 /* Extensions */,
 				F722D3382B04AFDD00076005 /* SwiftUI */,
+				F74EF5F62B0B6FC00026C601 /* FullSwipe */,
 				F732BF062AFD55E800C846B6 /* FallbackCase.swift */,
 				F7CA5A522AFE478200A44597 /* Pallete.swift */,
 				F70B14802B050D8D00629B50 /* DateFormatting.swift */,
@@ -690,6 +713,8 @@
 				F70B14872B06079D00629B50 /* LoadingView.swift in Sources */,
 				F732BF072AFD55E800C846B6 /* FallbackCase.swift in Sources */,
 				F7CA5A662B00F32800A44597 /* StarsView.swift in Sources */,
+				F74EF5F02B0B60170026C601 /* FullSwipeNavigationStack.swift in Sources */,
+				F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */,
 				F7CA5A5A2B00DBE400A44597 /* WelcomeView.swift in Sources */,
 				F79062F52AFD2CAB008F7851 /* MainView.swift in Sources */,
 				F7CA5A3D2AFE239000A44597 /* ForesightViewModel.swift in Sources */,
@@ -698,13 +723,16 @@
 				F70B148C2B07688F00629B50 /* SettingsView.swift in Sources */,
 				F732BF0A2AFD56F700C846B6 /* FirestoreService.swift in Sources */,
 				F722D33D2B04B50600076005 /* User.swift in Sources */,
+				F74EF5FA2B0B70750026C601 /* EnviromentValues+Ext.swift in Sources */,
 				F70B148E2B07768F00629B50 /* SettingsViewModel.swift in Sources */,
+				F74EF5F42B0B6FB40026C601 /* FullSwipeModifier.swift in Sources */,
 				F7E3D08A2B0130610062D24C /* SizeKey.swift in Sources */,
 				F7CA5A622B00E49200A44597 /* ActionButtonView.swift in Sources */,
 				F70B14922B08C2A800629B50 /* ForesightEmpyView.swift in Sources */,
 				F7CA5A442AFE28BE00A44597 /* FirestoreError.swift in Sources */,
 				F722D3312B037C0E00076005 /* BoundsAnchorKey.swift in Sources */,
 				F79600172B0358FF0045AB75 /* MainTextItem.swift in Sources */,
+				F74EF5F22B0B61590026C601 /* UIVIew+Ext.swift in Sources */,
 				F790633E2AFD31FE008F7851 /* Sign.swift in Sources */,
 				F7E3D0852B01178E0062D24C /* SignPickerItem.swift in Sources */,
 				F75DF5F12B00F74A008D22F4 /* FeatureView.swift in Sources */,
@@ -712,7 +740,7 @@
 				F722D33A2B04B06400076005 /* UIApplication+Ext.swift in Sources */,
 				F70B14812B050D8D00629B50 /* DateFormatting.swift in Sources */,
 				F72A655A2B013CB4002A3472 /* OnboardingViewModel.swift in Sources */,
-				F75DF5F82B00FD7E008D22F4 /* UINavigationController.swift in Sources */,
+				F75DF5F82B00FD7E008D22F4 /* UINavigationController+Ext.swift in Sources */,
 				F7CA5A402AFE289400A44597 /* FirestoreServiceProtocol.swift in Sources */,
 				F70B14832B050E1000629B50 /* Date+Ext.swift in Sources */,
 				F79062F32AFD2CAB008F7851 /* WierdScopeApp.swift in Sources */,

@@ -17,7 +17,7 @@ struct MainView: View {
     var body: some View {
         if let sign = selectedSign ?? users.first?.sign {
             GeometryReader { (proxy) in
-                NavigationStack {
+                FullSwipeNavigationStack {
                     ForesightView(
                         isSharePresented: $isSharePresented,
                         sign: sign,
@@ -26,6 +26,7 @@ struct MainView: View {
                     .overlay(alignment: .topTrailing) {
                         NavigationLink {
                             SettingsView(sign: sign)
+                                .enableFullSwipePop(true)
                         } label: {
                             Image(systemName: "gear")
                                 .font(.title)
