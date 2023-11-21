@@ -24,19 +24,19 @@ struct MainView: View {
                         safeArea: proxy.safeAreaInsets
                     )
                     .overlay(alignment: .topTrailing) {
-                        NavigationLink {
-                            SettingsView(sign: sign)
-                                .enableFullSwipePop(true)
-                        } label: {
-                            Image(systemName: "gear")
-                                .font(.title)
-                                .frame(width: 50, height: 50)
-                                .scaledToFit()
-                                .tint(.black)
-                                .background {
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .fill(.white)
-                                }
+                        VStack(spacing: 8) {
+                            NavigationLink {
+                                SettingsView(sign: sign)
+                                    .enableFullSwipePop(true)
+                            } label: {
+                                actionLabel(imageSystemName: "gear")
+                            }
+                            
+                            NavigationLink {
+                                GalleryView()
+                            } label: {
+                                actionLabel(imageSystemName: "photo.artframe")
+                            }
                         }
                         .padding(.top, proxy.safeAreaInsets.top + 16)
                         .padding(.trailing, 16)
@@ -48,6 +48,19 @@ struct MainView: View {
         } else {
             OnboardingView()
         }
+    }
+    
+    @ViewBuilder
+    private func actionLabel(imageSystemName: String) -> some View {
+        Image(systemName: imageSystemName)
+            .font(.title)
+            .frame(width: 50, height: 50)
+            .scaledToFit()
+            .tint(.black)
+            .background {
+                RoundedRectangle(cornerRadius: 16)
+                    .fill(.white)
+            }
     }
 }
 

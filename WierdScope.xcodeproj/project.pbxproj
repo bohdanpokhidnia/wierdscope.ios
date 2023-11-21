@@ -36,6 +36,8 @@
 		F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */; };
 		F75DF5F82B00FD7E008D22F4 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */; };
 		F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */; };
+		F7640D792B0C90EF00278BCF /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7640D782B0C90EF00278BCF /* GalleryView.swift */; };
+		F7640D7C2B0C911900278BCF /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7640D7B2B0C911900278BCF /* GalleryViewModel.swift */; };
 		F775BA152B08CAC50049E391 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F775BA142B08CAC50049E391 /* WidgetKit.framework */; };
 		F775BA172B08CAC50049E391 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F775BA162B08CAC50049E391 /* SwiftUI.framework */; };
 		F775BA1A2B08CAC50049E391 /* WierdScopeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F775BA192B08CAC50049E391 /* WierdScopeWidgetBundle.swift */; };
@@ -169,6 +171,8 @@
 		F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelfView.swift; sourceTree = "<group>"; };
 		F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
 		F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSignView.swift; sourceTree = "<group>"; };
+		F7640D782B0C90EF00278BCF /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		F7640D7B2B0C911900278BCF /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		F775BA122B08CAC50049E391 /* WierdScopeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WierdScopeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F775BA142B08CAC50049E391 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F775BA162B08CAC50049E391 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -323,6 +327,15 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		F7640D7A2B0C910900278BCF /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				F7640D7B2B0C911900278BCF /* GalleryViewModel.swift */,
+				F7640D782B0C90EF00278BCF /* GalleryView.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		F775BA132B08CAC50049E391 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,6 +474,7 @@
 				F7CA5A572B00DAB500A44597 /* Main */,
 				F70B14842B051D1C00629B50 /* Foresight */,
 				F70B148A2B07688100629B50 /* Settings */,
+				F7640D7A2B0C910900278BCF /* Gallery */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -727,6 +741,7 @@
 				F70B148E2B07768F00629B50 /* SettingsViewModel.swift in Sources */,
 				F74EF5F42B0B6FB40026C601 /* FullSwipeModifier.swift in Sources */,
 				F7E3D08A2B0130610062D24C /* SizeKey.swift in Sources */,
+				F7640D7C2B0C911900278BCF /* GalleryViewModel.swift in Sources */,
 				F7CA5A622B00E49200A44597 /* ActionButtonView.swift in Sources */,
 				F70B14922B08C2A800629B50 /* ForesightEmpyView.swift in Sources */,
 				F7CA5A442AFE28BE00A44597 /* FirestoreError.swift in Sources */,
@@ -745,6 +760,7 @@
 				F70B14832B050E1000629B50 /* Date+Ext.swift in Sources */,
 				F79062F32AFD2CAB008F7851 /* WierdScopeApp.swift in Sources */,
 				F796001A2B035FF90045AB75 /* ForesightView.swift in Sources */,
+				F7640D792B0C90EF00278BCF /* GalleryView.swift in Sources */,
 				F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */,
 				F7E3D0882B011D9D0062D24C /* OnboardingTitleView.swift in Sources */,
 				F797DD192B0A7DEE003E70E1 /* SecureView.swift in Sources */,
