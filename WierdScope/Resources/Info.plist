@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>We need access to your gallery to save foresights</string>
+	<string>Enable Photo Library access to be able to save your foresights.</string>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
 	<key>UIAppFonts</key>
