@@ -86,9 +86,6 @@
         }
       }
     },
-    "My Widget" : {
-
-    },
     "onboarding_choose_sign" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -242,8 +239,22 @@
         }
       }
     },
-    "This is an example widget." : {
-
+    "widget_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add a widget to let the stars tell you your horoscope!"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Додай віджет, щоб зірки розповіли тобі гороскоп!"
+          }
+        }
+      }
     },
     "widget_empty_sign" : {
       "extractionState" : "manual",
@@ -261,6 +272,9 @@
           }
         }
       }
+    },
+    "Wierd Scrope" : {
+
     }
   },
   "version" : "1.0"

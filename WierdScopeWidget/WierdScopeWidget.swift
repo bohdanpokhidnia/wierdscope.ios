@@ -134,8 +134,8 @@ struct WierdScopeWidget: Widget {
                     Color.widgetBackground
                 }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Wierd Scrope")
+        .description("widget_description".localize)
         .supportedFamilies([.systemMedium])
     }
 }
