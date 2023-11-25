@@ -14,7 +14,7 @@ struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(
             date: Date(),
-            foresight: "Test text placeholder",
+            foresight: "widget_placeholder".localize,
             fontSize: 16
         )
     }
@@ -23,7 +23,7 @@ struct Provider: TimelineProvider {
         let fontSize = fontSize(for: context.family)
         let entry = SimpleEntry(
             date: Date(),
-            foresight: "Select text",
+            foresight: "widget_placeholder".localize,
             fontSize: fontSize
         )
         completion(entry)

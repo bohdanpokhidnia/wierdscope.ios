@@ -250,7 +250,7 @@
         },
         "uk" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Додай віджет, щоб зірки розповіли тобі гороскоп!"
           }
         }
@@ -269,6 +269,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розкажіть нам які зірки працюють на вас, щоб ми могли показувати передбачення"
+          }
+        }
+      }
+    },
+    "widget_placeholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Be patient, be patient, patience grinds you down 😁"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Терпи, терпи, терпець тебе шліфує 😁"
           }
         }
       }
