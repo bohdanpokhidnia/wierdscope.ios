@@ -19,6 +19,7 @@ final class ForesightViewModel: ObservableObject {
     @Published private(set) var foresights: [String] = []
     
     private var firestoreService = FirestoreService()
+    let adProvider = AdProvider()
     
     var appName: String {
         if let bundleDisplayName = Bundle.main.object(forInfoDictionaryKey: "CFBundleDisplayName") as? String {

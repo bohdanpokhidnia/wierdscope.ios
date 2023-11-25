@@ -11,6 +11,7 @@ import SwiftData
 struct ForesightView: View {
     @Environment(\.scenePhase) private var scenePhase
     @StateObject private var viewModel = ForesightViewModel()
+    
     @Binding var isSharePresented: Bool
     let sign: Sign
     let safeArea: EdgeInsets
@@ -35,7 +36,7 @@ struct ForesightView: View {
             case .loaded:
                 LazyVStack(spacing: 0) {
                     ForEach(viewModel.foresights, id: \.self) { (foresight) in
-                        MainTextItem(text: foresight)
+                        MainTextItem(text: foresight, isSecureText: !isSharePresented)
                             .anchorPreference(key: BoundsAnchorKey.self, value: .bounds) { (anchor) in
                                 return ["foresight": anchor]
                             }
@@ -75,10 +76,16 @@ struct ForesightView: View {
         .background(.backgroundPrimary)
         .navigationBarBackButtonHidden(true)
         .onAppear {
-            viewModel.fetch(for: sign)
+            if isSharePresented {
+                didDisplayAd()
+            } else {
+                viewModel.fetch(for: sign)
+            }
         }
-        .onChange(of: scenePhase) { (oldValue, newValue) in
-            guard newValue == .active else { return }
+        .onChange(of: scenePhase) { (oldValue, _) in
+            guard oldValue == .background else {
+                return
+            }
             
             viewModel.fetch(for: sign)
         }
@@ -90,13 +97,13 @@ struct ForesightView: View {
             title: "main_share".localize,
             systemImageName: "square.and.arrow.up"
         ) {
-            isSharePresented.toggle()
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
-                actionSheet {
-                    isSharePresented.toggle()
-                }
+            isSharePresented = true
+
+            viewModel.adProvider.onFailedToLoadAd = {
+                self.didDisplayAd()
             }
+            
+            viewModel.adProvider.showAd()
         }
     }
     
@@ -110,6 +117,14 @@ struct ForesightView: View {
         
         let window = UIApplication.shared.firstWindow
         window?.rootViewController?.present(activityViewController, animated: true, completion: completion)
+    }
+    
+    private func didDisplayAd() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
+            actionSheet {
+                isSharePresented = false
+            }
+        }
     }
 }
 
