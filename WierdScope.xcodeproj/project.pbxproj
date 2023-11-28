@@ -29,7 +29,6 @@
 		F74EF5F42B0B6FB40026C601 /* FullSwipeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */; };
 		F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F72B0B70320026C601 /* PopNotificationID.swift */; };
 		F74EF5FA2B0B70750026C601 /* EnviromentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */; };
-		F75DF5EF2B00F529008D22F4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */; };
 		F75DF5F12B00F74A008D22F4 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F02B00F74A008D22F4 /* FeatureView.swift */; };
 		F75DF5F32B00F7ED008D22F4 /* Harmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F22B00F7ED008D22F4 /* Harmony.swift */; };
 		F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */; };
@@ -85,6 +84,8 @@
 		F797DD192B0A7DEE003E70E1 /* SecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797DD182B0A7DEE003E70E1 /* SecureView.swift */; };
 		F797DD1A2B0A909A003E70E1 /* SecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F797DD182B0A7DEE003E70E1 /* SecureView.swift */; };
 		F797DD1B2B0A92B7003E70E1 /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* SizeKey.swift */; };
+		F7B2B4062B1660710051E7C2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */; };
+		F7B2B4072B1661290051E7C2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */; };
 		F7CA5A3D2AFE239000A44597 /* ForesightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3C2AFE239000A44597 /* ForesightViewModel.swift */; };
 		F7CA5A402AFE289400A44597 /* FirestoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */; };
 		F7CA5A422AFE28AE00A44597 /* FirestoreCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */; };
@@ -102,7 +103,6 @@
 		F7D2BF2A2B08CFC300DC95B5 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2BF282B08CFA400DC95B5 /* Montserrat.ttf */; };
 		F7D2BF2B2B08CFC500DC95B5 /* IBMPlexSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2BF292B08CFA400DC95B5 /* IBMPlexSerif-Regular.ttf */; };
 		F7D2BF2E2B08DD6600DC95B5 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A5F2B00DD3500A44597 /* String+Ext.swift */; };
-		F7D2BF332B08DFBC00DC95B5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */; };
 		F7D2BF342B08E13D00DC95B5 /* FirestoreCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */; };
 		F7D2BF352B08E14000DC95B5 /* FirestoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A432AFE28BE00A44597 /* FirestoreError.swift */; };
 		F7D2BF362B08E14200DC95B5 /* FirestoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */; };
@@ -165,7 +165,6 @@
 		F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSwipeModifier.swift; sourceTree = "<group>"; };
 		F74EF5F72B0B70320026C601 /* PopNotificationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopNotificationID.swift; sourceTree = "<group>"; };
 		F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnviromentValues+Ext.swift"; sourceTree = "<group>"; };
-		F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F75DF5F02B00F74A008D22F4 /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
 		F75DF5F22B00F7ED008D22F4 /* Harmony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harmony.swift; sourceTree = "<group>"; };
 		F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelfView.swift; sourceTree = "<group>"; };
@@ -190,6 +189,7 @@
 		F79600162B0358FF0045AB75 /* MainTextItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextItem.swift; sourceTree = "<group>"; };
 		F79600192B035FF90045AB75 /* ForesightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightView.swift; sourceTree = "<group>"; };
 		F797DD182B0A7DEE003E70E1 /* SecureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureView.swift; sourceTree = "<group>"; };
+		F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F7CA5A3C2AFE239000A44597 /* ForesightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightViewModel.swift; sourceTree = "<group>"; };
 		F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreServiceProtocol.swift; sourceTree = "<group>"; };
 		F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollection.swift; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 			children = (
 				F7CA5A482AFE3DA300A44597 /* Fonts */,
 				F79062F62AFD2CAD008F7851 /* Assets.xcassets */,
-				F75DF5EE2B00F529008D22F4 /* Localizable.xcstrings */,
+				F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */,
 				F7CA5A452AFE36CE00A44597 /* Info.plist */,
 				F70B147E2B0509C400629B50 /* GoogleService-Info.plist */,
 			);
@@ -652,10 +652,9 @@
 			};
 			buildConfigurationList = F79062EA2AFD2CAB008F7851 /* Build configuration list for PBXProject "WierdScope" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = uk;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				uk,
 			);
@@ -680,9 +679,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F775BA1E2B08CAC60049E391 /* Assets.xcassets in Resources */,
+				F7B2B4072B1661290051E7C2 /* Localizable.xcstrings in Resources */,
 				F7D2BF2B2B08CFC500DC95B5 /* IBMPlexSerif-Regular.ttf in Resources */,
 				F7D2BF3A2B08E5A300DC95B5 /* GoogleService-Info.plist in Resources */,
-				F7D2BF332B08DFBC00DC95B5 /* Localizable.xcstrings in Resources */,
 				F7D2BF2A2B08CFC300DC95B5 /* Montserrat.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +692,7 @@
 			files = (
 				F79062FA2AFD2CAD008F7851 /* Preview Assets.xcassets in Resources */,
 				F7CA5A552AFE4CFF00A44597 /* IBMPlexSerif-Regular.ttf in Resources */,
-				F75DF5EF2B00F529008D22F4 /* Localizable.xcstrings in Resources */,
+				F7B2B4062B1660710051E7C2 /* Localizable.xcstrings in Resources */,
 				F7CA5A4C2AFE416000A44597 /* Montserrat.ttf in Resources */,
 				F79062F72AFD2CAD008F7851 /* Assets.xcassets in Resources */,
 				F70B147F2B0509C400629B50 /* GoogleService-Info.plist in Resources */,

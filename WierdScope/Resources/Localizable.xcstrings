@@ -1,15 +1,9 @@
 {
-  "sourceLanguage" : "en",
+  "sourceLanguage" : "uk",
   "strings" : {
     "continue" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Continue"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21,12 +15,6 @@
     "foresight_no_found_1" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your stars burned out at work and went supernova"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -38,12 +26,6 @@
     "foresight_no_found_2" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "We are looking for new ones that will cope with your lifestyle"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -55,12 +37,6 @@
     "main_loading" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Loading"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -72,12 +48,6 @@
     "main_share" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Share"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -89,12 +59,6 @@
     "onboarding_choose_sign" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose your sign"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -106,16 +70,10 @@
     "onboarding_feature" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stars can't predict the future, it's a bull shit"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зірки не вміють передбачати майбутнє, це булшіт"
+            "value" : "Зірки не вміють передбачати майбутнє, це\nбулшіт"
           }
         }
       }
@@ -123,16 +81,10 @@
     "onboarding_harmony" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "But they know how to open your inner self and help you to be in harmony with the universe and with yourself"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Але вони вміють відкрити твоє внутрішнє я, та допомогти тобі бути в гармонії із всесвітом та із самим"
+            "value" : "Але вони вміють відкрити твоє внутрішнє я, та допомогти тобі бути в гармонії із всесвітом та із\nсамим"
           }
         }
       }
@@ -140,12 +92,6 @@
     "onboarding_make_self" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Be different and be who you are, the stars support you in this"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -157,12 +103,6 @@
     "onboarding_stars" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "For the stars, you are the greatest value and purpose of their glow"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -174,12 +114,6 @@
     "onboarding_welcome" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "WeirdScope - your daily horoscope without prejudice"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -191,12 +125,6 @@
     "settings" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Settings"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -208,12 +136,6 @@
     "settings_change_language" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Change language"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -225,12 +147,6 @@
     "settings_change_sign" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Change sign"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -242,16 +158,10 @@
     "widget_description" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Add a widget to let the stars tell you your horoscope!"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Додай віджет, щоб зірки розповіли тобі гороскоп!"
+            "value" : "Додай віджет, щоб зірки розповіли тобі\nгороскоп!"
           }
         }
       }
@@ -259,16 +169,10 @@
     "widget_empty_sign" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tell us which stars are working for you so we can show you predictions"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Розкажіть нам які зірки працюють на вас, щоб ми могли показувати передбачення"
+            "value" : "Розкажіть нам які зірки працюють на вас, щоб\nми могли показувати передбачення"
           }
         }
       }
@@ -276,12 +180,6 @@
     "widget_placeholder" : {
       "extractionState" : "manual",
       "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Be patient, be patient, patience grinds you down 😁"
-          }
-        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
