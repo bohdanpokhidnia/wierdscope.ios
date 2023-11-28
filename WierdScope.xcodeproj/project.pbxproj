@@ -992,6 +992,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WierdScope/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wierd Scope";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Enable Photo Library access to be able to save your foresights.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1036,6 +1037,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WierdScope/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wierd Scope";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Enable Photo Library access to be able to save your foresights.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
