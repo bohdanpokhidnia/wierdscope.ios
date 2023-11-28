@@ -22,7 +22,6 @@
 		F722D33D2B04B50600076005 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D33C2B04B50600076005 /* User.swift */; };
 		F72A655A2B013CB4002A3472 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72A65592B013CB4002A3472 /* OnboardingViewModel.swift */; };
 		F732BF032AFD40C300C846B6 /* Foresight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF022AFD40C300C846B6 /* Foresight.swift */; };
-		F732BF052AFD50ED00C846B6 /* ApplicationCheckProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF042AFD50ED00C846B6 /* ApplicationCheckProvider.swift */; };
 		F732BF072AFD55E800C846B6 /* FallbackCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF062AFD55E800C846B6 /* FallbackCase.swift */; };
 		F732BF0A2AFD56F700C846B6 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F732BF092AFD56F700C846B6 /* FirestoreService.swift */; };
 		F74EF5F02B0B60170026C601 /* FullSwipeNavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5EF2B0B60170026C601 /* FullSwipeNavigationStack.swift */; };
@@ -159,7 +158,6 @@
 		F722D33C2B04B50600076005 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F72A65592B013CB4002A3472 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		F732BF022AFD40C300C846B6 /* Foresight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foresight.swift; sourceTree = "<group>"; };
-		F732BF042AFD50ED00C846B6 /* ApplicationCheckProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCheckProvider.swift; sourceTree = "<group>"; };
 		F732BF062AFD55E800C846B6 /* FallbackCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallbackCase.swift; sourceTree = "<group>"; };
 		F732BF092AFD56F700C846B6 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		F74EF5EF2B0B60170026C601 /* FullSwipeNavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSwipeNavigationStack.swift; sourceTree = "<group>"; };
@@ -418,7 +416,6 @@
 		F790633A2AFD2E5E008F7851 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				F732BF042AFD50ED00C846B6 /* ApplicationCheckProvider.swift */,
 				F790633B2AFD2E6D008F7851 /* AppDelegate.swift */,
 				F79062F22AFD2CAB008F7851 /* WierdScopeApp.swift */,
 			);
@@ -735,7 +732,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F722D3332B0385D100076005 /* AppBannerView.swift in Sources */,
-				F732BF052AFD50ED00C846B6 /* ApplicationCheckProvider.swift in Sources */,
 				F790633C2AFD2E6D008F7851 /* AppDelegate.swift in Sources */,
 				F7CA5A642B00ECC700A44597 /* OnboardingView.swift in Sources */,
 				F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */,
