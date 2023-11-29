@@ -8,6 +8,11 @@
 import SwiftUI
 
 extension View {
+    var navigationBarHeight: CGFloat {
+        let height = UINavigationController().navigationBar.frame.height
+        return height
+    }
+    
     func takeScreenshot() -> UIImage? {
         let window = UIApplication.shared.firstWindow
         let renderer = UIGraphicsImageRenderer(bounds: window?.bounds ?? UIScreen.main.bounds)

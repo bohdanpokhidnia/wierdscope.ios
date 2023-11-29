@@ -9,25 +9,21 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        Color(.backgroundPrimary)
-            .ignoresSafeArea(.all)
-            .overlay(alignment: .top) {
-                OnboardingTitleView(title: "onboarding_welcome".localize)
-                    .padding([.top, .horizontal])
-            }
-            .overlay(alignment: .bottom) {
-                NavigationLink {
-                    StarsView()
-                } label: {
-                    Text("continue".localize)
-                }
-                .padding(.horizontal, 16)
-                .padding(.bottom, 16)
-                .buttonStyle(ActionButtonStyle())
-            }
+        OnboardingPageView(
+            navigationBarPadding: true,
+            title: "onboarding_welcome".localize,
+            image: Image(.meditation)
+        ) {
+            FeatureView()
+        }
+        .frame(maxWidth: .infinity)
+        .containerRelativeFrame(.vertical)
+        .background(.backgroundPrimary)
     }
 }
 
 #Preview {
-    WelcomeView()
+    NavigationStack {
+        WelcomeView()
+    }
 }

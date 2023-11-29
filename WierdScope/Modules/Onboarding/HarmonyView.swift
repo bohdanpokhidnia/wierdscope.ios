@@ -1,5 +1,5 @@
 //
-//  MakeSelfView.swift
+//  HarmonyView.swift
 //  WierdScope
 //
 //  Created by Bohdan Pokhidnia on 12.11.2023.
@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct MakeSelfView: View {
+struct HarmonyView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        OnboardingPageView(title: "onboarding_make_self".localize, image: Image(.beautiful)) {
-            ChooseSignView()
+        OnboardingPageView(
+            title: "onboarding_harmony".localize,
+            titleLineLimit: 2,
+            image: Image(.relaxation)
+        ) {
+            MakeSelfView()
         }
         .frame(maxWidth: .infinity)
         .containerRelativeFrame(.vertical)
@@ -33,6 +37,6 @@ struct MakeSelfView: View {
 
 #Preview {
     NavigationStack {
-        MakeSelfView()
+        HarmonyView()
     }
 }

@@ -30,7 +30,7 @@
 		F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F72B0B70320026C601 /* PopNotificationID.swift */; };
 		F74EF5FA2B0B70750026C601 /* EnviromentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */; };
 		F75DF5F12B00F74A008D22F4 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F02B00F74A008D22F4 /* FeatureView.swift */; };
-		F75DF5F32B00F7ED008D22F4 /* Harmony.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F22B00F7ED008D22F4 /* Harmony.swift */; };
+		F75DF5F32B00F7ED008D22F4 /* HarmonyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F22B00F7ED008D22F4 /* HarmonyView.swift */; };
 		F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */; };
 		F75DF5F82B00FD7E008D22F4 /* UINavigationController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */; };
 		F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */; };
@@ -86,6 +86,7 @@
 		F797DD1B2B0A92B7003E70E1 /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* SizeKey.swift */; };
 		F7B2B4062B1660710051E7C2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */; };
 		F7B2B4072B1661290051E7C2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */; };
+		F7B2B40D2B1727230051E7C2 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B2B40C2B1727230051E7C2 /* OnboardingPageView.swift */; };
 		F7CA5A3D2AFE239000A44597 /* ForesightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3C2AFE239000A44597 /* ForesightViewModel.swift */; };
 		F7CA5A402AFE289400A44597 /* FirestoreServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */; };
 		F7CA5A422AFE28AE00A44597 /* FirestoreCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */; };
@@ -97,7 +98,6 @@
 		F7CA5A602B00DD3500A44597 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A5F2B00DD3500A44597 /* String+Ext.swift */; };
 		F7CA5A622B00E49200A44597 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A612B00E49200A44597 /* ActionButtonView.swift */; };
 		F7CA5A642B00ECC700A44597 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A632B00ECC700A44597 /* OnboardingView.swift */; };
-		F7CA5A662B00F32800A44597 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A652B00F32800A44597 /* StarsView.swift */; };
 		F7D2BF242B08CECE00DC95B5 /* Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CA5A522AFE478200A44597 /* Pallete.swift */; };
 		F7D2BF252B08CEEF00DC95B5 /* MainTextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79600162B0358FF0045AB75 /* MainTextItem.swift */; };
 		F7D2BF2A2B08CFC300DC95B5 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7D2BF282B08CFA400DC95B5 /* Montserrat.ttf */; };
@@ -166,7 +166,7 @@
 		F74EF5F72B0B70320026C601 /* PopNotificationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopNotificationID.swift; sourceTree = "<group>"; };
 		F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnviromentValues+Ext.swift"; sourceTree = "<group>"; };
 		F75DF5F02B00F74A008D22F4 /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
-		F75DF5F22B00F7ED008D22F4 /* Harmony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harmony.swift; sourceTree = "<group>"; };
+		F75DF5F22B00F7ED008D22F4 /* HarmonyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyView.swift; sourceTree = "<group>"; };
 		F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelfView.swift; sourceTree = "<group>"; };
 		F75DF5F72B00FD7E008D22F4 /* UINavigationController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Ext.swift"; sourceTree = "<group>"; };
 		F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSignView.swift; sourceTree = "<group>"; };
@@ -190,6 +190,7 @@
 		F79600192B035FF90045AB75 /* ForesightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightView.swift; sourceTree = "<group>"; };
 		F797DD182B0A7DEE003E70E1 /* SecureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureView.swift; sourceTree = "<group>"; };
 		F7B2B4052B1660710051E7C2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		F7B2B40C2B1727230051E7C2 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
 		F7CA5A3C2AFE239000A44597 /* ForesightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightViewModel.swift; sourceTree = "<group>"; };
 		F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreServiceProtocol.swift; sourceTree = "<group>"; };
 		F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreCollection.swift; sourceTree = "<group>"; };
@@ -202,7 +203,6 @@
 		F7CA5A5F2B00DD3500A44597 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		F7CA5A612B00E49200A44597 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		F7CA5A632B00ECC700A44597 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		F7CA5A652B00F32800A44597 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
 		F7D2BF282B08CFA400DC95B5 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		F7D2BF292B08CFA400DC95B5 /* IBMPlexSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSerif-Regular.ttf"; sourceTree = "<group>"; };
 		F7D2BF2C2B08DAFD00DC95B5 /* WierdScope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WierdScope.entitlements; sourceTree = "<group>"; };
@@ -458,7 +458,6 @@
 			isa = PBXGroup;
 			children = (
 				F7CA5A5D2B00DD1E00A44597 /* Extensions */,
-				F722D3382B04AFDD00076005 /* SwiftUI */,
 				F74EF5F62B0B6FC00026C601 /* FullSwipe */,
 				F732BF062AFD55E800C846B6 /* FallbackCase.swift */,
 				F7CA5A522AFE478200A44597 /* Pallete.swift */,
@@ -496,9 +495,8 @@
 				F72A65592B013CB4002A3472 /* OnboardingViewModel.swift */,
 				F7CA5A632B00ECC700A44597 /* OnboardingView.swift */,
 				F7CA5A592B00DBE400A44597 /* WelcomeView.swift */,
-				F7CA5A652B00F32800A44597 /* StarsView.swift */,
 				F75DF5F02B00F74A008D22F4 /* FeatureView.swift */,
-				F75DF5F22B00F7ED008D22F4 /* Harmony.swift */,
+				F75DF5F22B00F7ED008D22F4 /* HarmonyView.swift */,
 				F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */,
 				F75DF5F92B00FFCE008D22F4 /* ChooseSignView.swift */,
 			);
@@ -510,6 +508,7 @@
 			children = (
 				F7CA5A5E2B00DD2B00A44597 /* Foundation */,
 				F75DF5F62B00FD64008D22F4 /* UIKit */,
+				F722D3382B04AFDD00076005 /* SwiftUI */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -548,6 +547,7 @@
 				F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */,
 				F7CA5A612B00E49200A44597 /* ActionButtonView.swift */,
 				F7E3D0842B01178E0062D24C /* SignPickerItem.swift */,
+				F7B2B40C2B1727230051E7C2 /* OnboardingPageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -736,7 +736,6 @@
 				F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */,
 				F70B14872B06079D00629B50 /* LoadingView.swift in Sources */,
 				F732BF072AFD55E800C846B6 /* FallbackCase.swift in Sources */,
-				F7CA5A662B00F32800A44597 /* StarsView.swift in Sources */,
 				F74EF5F02B0B60170026C601 /* FullSwipeNavigationStack.swift in Sources */,
 				F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */,
 				F7F5C29C2B0F413C00ACD69D /* AdProvider.swift in Sources */,
@@ -750,6 +749,7 @@
 				F722D33D2B04B50600076005 /* User.swift in Sources */,
 				F74EF5FA2B0B70750026C601 /* EnviromentValues+Ext.swift in Sources */,
 				F70B148E2B07768F00629B50 /* SettingsViewModel.swift in Sources */,
+				F7B2B40D2B1727230051E7C2 /* OnboardingPageView.swift in Sources */,
 				F74EF5F42B0B6FB40026C601 /* FullSwipeModifier.swift in Sources */,
 				F7E3D08A2B0130610062D24C /* SizeKey.swift in Sources */,
 				F7640D7C2B0C911900278BCF /* GalleryViewModel.swift in Sources */,
@@ -762,7 +762,7 @@
 				F790633E2AFD31FE008F7851 /* Sign.swift in Sources */,
 				F7E3D0852B01178E0062D24C /* SignPickerItem.swift in Sources */,
 				F75DF5F12B00F74A008D22F4 /* FeatureView.swift in Sources */,
-				F75DF5F32B00F7ED008D22F4 /* Harmony.swift in Sources */,
+				F75DF5F32B00F7ED008D22F4 /* HarmonyView.swift in Sources */,
 				F722D33A2B04B06400076005 /* UIApplication+Ext.swift in Sources */,
 				F70B14812B050D8D00629B50 /* DateFormatting.swift in Sources */,
 				F72A655A2B013CB4002A3472 /* OnboardingViewModel.swift in Sources */,
