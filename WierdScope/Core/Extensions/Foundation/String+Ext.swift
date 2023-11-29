@@ -27,4 +27,10 @@ extension String {
         UIGraphicsEndImageContext()
         return image
     }
+    
+    func toDate(for style: DateFormatStyle) -> Date? {
+        let dateFormatter = CommonDateFormaters.formatter(for: style)
+        let date = dateFormatter.date(from: self)
+        return date
+    }
 }
