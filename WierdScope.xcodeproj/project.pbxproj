@@ -29,6 +29,8 @@
 		F74EF5F42B0B6FB40026C601 /* FullSwipeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */; };
 		F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F72B0B70320026C601 /* PopNotificationID.swift */; };
 		F74EF5FA2B0B70750026C601 /* EnviromentValues+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */; };
+		F75064C12B230B8F00DDEAFF /* BackgroundTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75064C02B230B8F00DDEAFF /* BackgroundTextFieldStyle.swift */; };
+		F75064C42B230D6200DDEAFF /* HeaderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75064C32B230D6200DDEAFF /* HeaderText.swift */; };
 		F75DF5F12B00F74A008D22F4 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F02B00F74A008D22F4 /* FeatureView.swift */; };
 		F75DF5F32B00F7ED008D22F4 /* HarmonyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F22B00F7ED008D22F4 /* HarmonyView.swift */; };
 		F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */; };
@@ -114,6 +116,8 @@
 		F7E3D0852B01178E0062D24C /* SignPickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0842B01178E0062D24C /* SignPickerItem.swift */; };
 		F7E3D0882B011D9D0062D24C /* OnboardingTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */; };
 		F7E3D08A2B0130610062D24C /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3D0892B0130610062D24C /* SizeKey.swift */; };
+		F7EA34292B21D35600E20686 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA34282B21D35600E20686 /* DropDownView.swift */; };
+		F7EA342B2B220EE800E20686 /* Month.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EA342A2B220EE800E20686 /* Month.swift */; };
 		F7F5C2992B0F3D9C00ACD69D /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = F7F5C2982B0F3D9C00ACD69D /* GoogleMobileAds */; };
 		F7F5C29C2B0F413C00ACD69D /* AdProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5C29B2B0F413C00ACD69D /* AdProvider.swift */; };
 /* End PBXBuildFile section */
@@ -165,6 +169,8 @@
 		F74EF5F32B0B6FB40026C601 /* FullSwipeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullSwipeModifier.swift; sourceTree = "<group>"; };
 		F74EF5F72B0B70320026C601 /* PopNotificationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopNotificationID.swift; sourceTree = "<group>"; };
 		F74EF5F92B0B70750026C601 /* EnviromentValues+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnviromentValues+Ext.swift"; sourceTree = "<group>"; };
+		F75064C02B230B8F00DDEAFF /* BackgroundTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTextFieldStyle.swift; sourceTree = "<group>"; };
+		F75064C32B230D6200DDEAFF /* HeaderText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderText.swift; sourceTree = "<group>"; };
 		F75DF5F02B00F74A008D22F4 /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
 		F75DF5F22B00F7ED008D22F4 /* HarmonyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyView.swift; sourceTree = "<group>"; };
 		F75DF5F42B00F89C008D22F4 /* MakeSelfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeSelfView.swift; sourceTree = "<group>"; };
@@ -210,6 +216,8 @@
 		F7E3D0842B01178E0062D24C /* SignPickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignPickerItem.swift; sourceTree = "<group>"; };
 		F7E3D0872B011D9D0062D24C /* OnboardingTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTitleView.swift; sourceTree = "<group>"; };
 		F7E3D0892B0130610062D24C /* SizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeKey.swift; sourceTree = "<group>"; };
+		F7EA34282B21D35600E20686 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		F7EA342A2B220EE800E20686 /* Month.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Month.swift; sourceTree = "<group>"; };
 		F7F5C29B2B0F413C00ACD69D /* AdProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				F790633D2AFD31FE008F7851 /* Sign.swift */,
+				F7EA342A2B220EE800E20686 /* Month.swift */,
 				F722D33C2B04B50600076005 /* User.swift */,
 				F732BF022AFD40C300C846B6 /* Foresight.swift */,
 			);
@@ -318,6 +327,22 @@
 				F74EF5F72B0B70320026C601 /* PopNotificationID.swift */,
 			);
 			path = FullSwipe;
+			sourceTree = "<group>";
+		};
+		F75064BF2B230B7F00DDEAFF /* TextFieldStyle */ = {
+			isa = PBXGroup;
+			children = (
+				F75064C02B230B8F00DDEAFF /* BackgroundTextFieldStyle.swift */,
+			);
+			path = TextFieldStyle;
+			sourceTree = "<group>";
+		};
+		F75064C22B230D5400DDEAFF /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				F75064C32B230D6200DDEAFF /* HeaderText.swift */,
+			);
+			path = ViewModifier;
 			sourceTree = "<group>";
 		};
 		F75DF5F62B00FD64008D22F4 /* UIKit */ = {
@@ -459,6 +484,8 @@
 			children = (
 				F7CA5A5D2B00DD1E00A44597 /* Extensions */,
 				F74EF5F62B0B6FC00026C601 /* FullSwipe */,
+				F75064BF2B230B7F00DDEAFF /* TextFieldStyle */,
+				F75064C22B230D5400DDEAFF /* ViewModifier */,
 				F732BF062AFD55E800C846B6 /* FallbackCase.swift */,
 				F7CA5A522AFE478200A44597 /* Pallete.swift */,
 				F70B14802B050D8D00629B50 /* DateFormatting.swift */,
@@ -548,6 +575,7 @@
 				F7CA5A612B00E49200A44597 /* ActionButtonView.swift */,
 				F7E3D0842B01178E0062D24C /* SignPickerItem.swift */,
 				F7B2B40C2B1727230051E7C2 /* OnboardingPageView.swift */,
+				F7EA34282B21D35600E20686 /* DropDownView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -733,8 +761,10 @@
 				F722D3332B0385D100076005 /* AppBannerView.swift in Sources */,
 				F790633C2AFD2E6D008F7851 /* AppDelegate.swift in Sources */,
 				F7CA5A642B00ECC700A44597 /* OnboardingView.swift in Sources */,
+				F75064C42B230D6200DDEAFF /* HeaderText.swift in Sources */,
 				F75DF5FA2B00FFCE008D22F4 /* ChooseSignView.swift in Sources */,
 				F70B14872B06079D00629B50 /* LoadingView.swift in Sources */,
+				F7EA342B2B220EE800E20686 /* Month.swift in Sources */,
 				F732BF072AFD55E800C846B6 /* FallbackCase.swift in Sources */,
 				F74EF5F02B0B60170026C601 /* FullSwipeNavigationStack.swift in Sources */,
 				F74EF5F82B0B70320026C601 /* PopNotificationID.swift in Sources */,
@@ -756,6 +786,7 @@
 				F7CA5A622B00E49200A44597 /* ActionButtonView.swift in Sources */,
 				F70B14922B08C2A800629B50 /* ForesightEmpyView.swift in Sources */,
 				F7CA5A442AFE28BE00A44597 /* FirestoreError.swift in Sources */,
+				F75064C12B230B8F00DDEAFF /* BackgroundTextFieldStyle.swift in Sources */,
 				F722D3312B037C0E00076005 /* BoundsAnchorKey.swift in Sources */,
 				F79600172B0358FF0045AB75 /* MainTextItem.swift in Sources */,
 				F74EF5F22B0B61590026C601 /* UIVIew+Ext.swift in Sources */,
@@ -771,6 +802,7 @@
 				F70B14832B050E1000629B50 /* Date+Ext.swift in Sources */,
 				F79062F32AFD2CAB008F7851 /* WierdScopeApp.swift in Sources */,
 				F796001A2B035FF90045AB75 /* ForesightView.swift in Sources */,
+				F7EA34292B21D35600E20686 /* DropDownView.swift in Sources */,
 				F7640D792B0C90EF00278BCF /* GalleryView.swift in Sources */,
 				F75DF5F52B00F89C008D22F4 /* MakeSelfView.swift in Sources */,
 				F7E3D0882B011D9D0062D24C /* OnboardingTitleView.swift in Sources */,

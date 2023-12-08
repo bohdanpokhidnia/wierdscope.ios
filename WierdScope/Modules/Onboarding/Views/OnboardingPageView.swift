@@ -39,16 +39,20 @@ struct OnboardingPageView<Destination: View>: View {
                     .padding([.top, .horizontal])
             }
             
+            Spacer()
+            
             image
                 .resizable()
                 .scaledToFit()
+            
+            Spacer()
             
             NavigationLink {
                 destination
             } label: {
                 Text("continue".localize)
             }
-            .padding(.horizontal, 16)
+            .padding(.horizontal, 26)
             .padding(.bottom, 16)
             .buttonStyle(ActionButtonStyle())
         }

@@ -1,6 +1,31 @@
 {
   "sourceLanguage" : "uk",
   "strings" : {
+    "" : {
+
+    },
+    "april" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "квітень"
+          }
+        }
+      }
+    },
+    "august" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "серпень"
+          }
+        }
+      }
+    },
     "continue" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8,6 +33,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Продовжити"
+          }
+        }
+      }
+    },
+    "december" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "грудень"
+          }
+        }
+      }
+    },
+    "february" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "лютий"
           }
         }
       }
@@ -34,6 +81,39 @@
         }
       }
     },
+    "january" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "січень"
+          }
+        }
+      }
+    },
+    "july" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "липень"
+          }
+        }
+      }
+    },
+    "june" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "червень"
+          }
+        }
+      }
+    },
     "main_loading" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -56,13 +136,68 @@
         }
       }
     },
+    "march" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "березень"
+          }
+        }
+      }
+    },
+    "may" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "травень"
+          }
+        }
+      }
+    },
+    "november" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "листопад"
+          }
+        }
+      }
+    },
+    "october" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "жовтень"
+          }
+        }
+      }
+    },
     "onboarding_choose_sign" : {
       "extractionState" : "manual",
       "localizations" : {
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Обери свій знак"
+            "value" : "Розкажи нам про себе"
+          }
+        }
+      }
+    },
+    "onboarding_day" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "День, коли ти з'явився на світ"
           }
         }
       }
@@ -73,7 +208,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Зірки не вміють передбачати майбутнє, це дурість"
+            "value" : "І щоб розбавити цю сірість іншими фарбами"
           }
         }
       }
@@ -84,7 +219,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Але вони допоможуть відкрити твоє внутрішнє я"
+            "value" : "Ми щодня будемо давати тобі надихаючі поради"
           }
         }
       }
@@ -95,7 +230,40 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Будь тим, ким хочеш. Зірки тебе в цьому підтримають"
+            "value" : "Або ж  ставити нетипові завдання на день"
+          }
+        }
+      }
+    },
+    "onboarding_month" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Місяць, коли ти з'вився на світ"
+          }
+        }
+      }
+    },
+    "onboarding_name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Імʼя"
+          }
+        }
+      }
+    },
+    "onboarding_select" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вибери"
           }
         }
       }
@@ -106,7 +274,29 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "WeirdScope — твій щоденний гороскоп без упереджень"
+            "value" : "Ми знаємо якими нудними бувають будні"
+          }
+        }
+      }
+    },
+    "onboarding_what_is_your_name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як тебе звати?"
+          }
+        }
+      }
+    },
+    "september" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "вересень"
           }
         }
       }
@@ -178,6 +368,9 @@
       }
     },
     "Wierd Scrope" : {
+
+    },
+    "Імʼя" : {
 
     }
   },

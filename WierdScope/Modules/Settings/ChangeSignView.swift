@@ -55,8 +55,10 @@ struct ChangeSignView: View {
 
 #Preview {
     NavigationStack {
-        ChangeSignView(users: [User(sign: .cancer)])
-            .environmentObject(SettingsViewModel())
-            .modelContainer(for: [User.self], inMemory: true)
+        ChangeSignView(users: [
+            User(name: "Username", sign: .cancer)
+        ])
+        .environmentObject(SettingsViewModel())
+        .modelContainer(for: [User.self], inMemory: true)
     }
 }

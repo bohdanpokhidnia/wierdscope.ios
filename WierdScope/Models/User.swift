@@ -10,9 +10,11 @@ import SwiftData
 
 @Model
 class User {
+    var name: String
     var sign: Sign
-
-    init(sign: Sign) {
+    
+    init(name: String, sign: Sign) {
+        self.name = name
         self.sign = sign
     }
 }

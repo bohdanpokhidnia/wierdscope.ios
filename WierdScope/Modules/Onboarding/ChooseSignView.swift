@@ -11,22 +11,57 @@ struct ChooseSignView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
     @StateObject private var viewModel = OnboardingViewModel()
-    @State var selectedSign: Sign?
+    @FocusState private var isFocusedNameField: Bool
+    @State private var username: String = ""
+    @State private var month: String?
+    @State private var numberOfDay: String?
 
     var body: some View {
         VStack(spacing: 16) {
             OnboardingTitleView(title: "onboarding_choose_sign".localize)
             
-            List {
-                ForEach(viewModel.signs, id: \.self) { (sign) in
-                    SignPickerItem(sign: sign) {
-                        selectedSign = sign
-                        saveUser(sign: sign)
-                    }
-                }
+            Spacer()
+            
+            TextField(
+                "",
+                text: $username,
+                prompt: Text("onboarding_name".localize)
+                    .font(.montserrat(size: 14).weight(.medium))
+                    .foregroundStyle(.gray)
+            )
+            .font(.montserrat(size: 14).weight(.medium))
+            .textFieldStyle(BackgroundTextFieldStyle(backgroundColor: .actionButtonBackground))
+            .focused($isFocusedNameField)
+            .modifier(HeaderText("onboarding_what_is_your_name".localize))
+            
+            DropDownView(
+                header: "onboarding_month".localize,
+                hint: "onboarding_select".localize,
+                options: viewModel.months,
+                maxDisplayItems: 4,
+                selection: $month
+            )
+            
+            DropDownView(
+                header: "onboarding_day".localize,
+                hint: "onboarding_select".localize,
+                options: viewModel.numberOfDaysInMonth,
+                direction: .top,
+                maxDisplayItems: 5,
+                selection: $numberOfDay
+            )
+            .disabled(month == nil)
+            
+            Spacer()
+            
+            ActionButtonView(title: "continue".localize) {
+                didTapContinue()
             }
-            .scrollContentBackground(.hidden)
+            .disabled(username.isEmpty || month == nil || numberOfDay == nil)
         }
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 26)
+        .padding(.bottom, 16)
         .background(.backgroundPrimary)
         .navigationBarBackButtonHidden(true)
         .toolbar {
@@ -39,16 +74,42 @@ struct ChooseSignView: View {
                 }
             }
         }
-        .onAppear {
-            viewModel.fetchSigns()
+        .onTapGesture {
+            isFocusedNameField = false
         }
-        .navigationDestination(item: $selectedSign) { (selectedSign) in
-            MainView(selectedSign: selectedSign)
+        .onAppear {
+            viewModel.fetchMonths()
+        }
+        .onChange(of: month) {
+            guard let selectedMonth = month else {
+                return
+            }
+            
+            numberOfDay = nil
+            viewModel.didSelect(monthName: selectedMonth)
+        }
+        .navigationDestination(item: $viewModel.sign) { (sign) in
+            MainView(selectedSign: sign)
         }
     }
     
-    private func saveUser(sign: Sign) {
-        let user = User(sign: sign)
+    private func didTapContinue() {
+        guard let selectedMonth = month else {
+            return
+        }
+        guard let selectedNumberOfDay = numberOfDay else {
+            return
+        }
+        
+        viewModel.fetchSign(numberOfDay: selectedNumberOfDay, monthName: selectedMonth)
+        saveUser(name: username)
+    }
+    
+    private func saveUser(name: String) {
+        guard let sign = viewModel.sign else {
+            return
+        }
+        let user = User(name: name, sign: sign)
         modelContext.insert(user)
     }
 }
