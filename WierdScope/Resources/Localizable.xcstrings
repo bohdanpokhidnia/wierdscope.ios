@@ -290,6 +290,17 @@
         }
       }
     },
+    "save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зберегти"
+          }
+        }
+      }
+    },
     "september" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -329,10 +340,13 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Змінити знак"
+            "value" : "Змінити інформацію"
           }
         }
       }
+    },
+    "Test" : {
+
     },
     "widget_description" : {
       "extractionState" : "manual",
@@ -368,9 +382,6 @@
       }
     },
     "Wierd Scrope" : {
-
-    },
-    "Імʼя" : {
 
     }
   },

@@ -26,7 +26,7 @@ struct MainView: View {
                     .overlay(alignment: .topTrailing) {
                         VStack(spacing: 8) {
                             NavigationLink {
-                                SettingsView(sign: sign)
+                                SettingsView()
                                     .enableFullSwipePop(true)
                             } label: {
                                 actionLabel(imageSystemName: "gear")

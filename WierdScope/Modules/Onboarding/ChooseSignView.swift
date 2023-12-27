@@ -16,9 +16,13 @@ struct ChooseSignView: View {
     @State private var month: String?
     @State private var numberOfDay: String?
 
+    var isEditMode: Bool = false
+    var users: [User] = []
+
     var body: some View {
         VStack(spacing: 16) {
             OnboardingTitleView(title: "onboarding_choose_sign".localize)
+                .opacity(isEditMode ? 0 : 1)
             
             Spacer()
             
@@ -54,8 +58,12 @@ struct ChooseSignView: View {
             
             Spacer()
             
-            ActionButtonView(title: "continue".localize) {
-                didTapContinue()
+            ActionButtonView(title: isEditMode ? "save".localize : "continue".localize) {
+                if isEditMode {
+                    didTapSaveUser()
+                } else {
+                    didTapContinue()
+                }
             }
             .disabled(username.isEmpty || month == nil || numberOfDay == nil)
         }
@@ -79,18 +87,53 @@ struct ChooseSignView: View {
         }
         .onAppear {
             viewModel.fetchMonths()
+            
+            if isEditMode {
+                guard let user = users.first else {
+                    return
+                }
+                
+                username = user.name
+                month = user.month
+                numberOfDay = user.numberOfBirthday
+                
+                viewModel.didSelect(monthName: user.month)
+            }
         }
-        .onChange(of: month) {
+        .onChange(of: month) { (old, _) in
             guard let selectedMonth = month else {
                 return
             }
+            guard old != nil else {
+                return
+            }
             
-            numberOfDay = nil
-            viewModel.didSelect(monthName: selectedMonth)
+            if numberOfDay != nil {
+                numberOfDay = nil
+                viewModel.didSelect(monthName: selectedMonth)
+            }
         }
         .navigationDestination(item: $viewModel.sign) { (sign) in
             MainView(selectedSign: sign)
         }
+    }
+    
+    private func didTapSaveUser() {
+        guard let month else {
+            return
+        }
+        guard let numberOfDay else {
+            return
+        }
+        let sign = viewModel.fetchSign(numberOfDay: numberOfDay, monthName: month)
+        let user = users.first
+        
+        user?.name = username
+        user?.month = month
+        user?.numberOfBirthday = numberOfDay
+        user?.sign = sign
+        
+        dismiss()
     }
     
     private func didTapContinue() {
@@ -101,22 +144,32 @@ struct ChooseSignView: View {
             return
         }
         
-        viewModel.fetchSign(numberOfDay: selectedNumberOfDay, monthName: selectedMonth)
-        saveUser(name: username)
+        let sign = viewModel.fetchSign(numberOfDay: selectedNumberOfDay, monthName: selectedMonth)
+        viewModel.sign = sign
+        saveUser(name: username, sign: sign)
     }
     
-    private func saveUser(name: String) {
-        guard let sign = viewModel.sign else {
+    private func saveUser(name: String, sign: Sign) {
+        guard let month else {
             return
         }
-        let user = User(name: name, sign: sign)
+        guard let numberOfDay else {
+            return
+        }
+        
+        let user = User(
+            name: name,
+            month: month,
+            numberOfBirthday: numberOfDay,
+            sign: sign
+        )
         modelContext.insert(user)
     }
 }
 
 #Preview {
     NavigationStack {
-        ChooseSignView()
+        ChooseSignView(isEditMode: true)
             .modelContainer(for: [User.self], inMemory: true)
     }
 }

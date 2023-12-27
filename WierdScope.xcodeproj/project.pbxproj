@@ -13,7 +13,6 @@
 		F70B14872B06079D00629B50 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B14862B06079D00629B50 /* LoadingView.swift */; };
 		F70B148C2B07688F00629B50 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B148B2B07688F00629B50 /* SettingsView.swift */; };
 		F70B148E2B07768F00629B50 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B148D2B07768F00629B50 /* SettingsViewModel.swift */; };
-		F70B14902B07792300629B50 /* ChangeSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B148F2B07792300629B50 /* ChangeSignView.swift */; };
 		F70B14922B08C2A800629B50 /* ForesightEmpyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70B14912B08C2A800629B50 /* ForesightEmpyView.swift */; };
 		F722D3312B037C0E00076005 /* BoundsAnchorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D3302B037C0E00076005 /* BoundsAnchorKey.swift */; };
 		F722D3332B0385D100076005 /* AppBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F722D3322B0385D100076005 /* AppBannerView.swift */; };
@@ -153,7 +152,6 @@
 		F70B14862B06079D00629B50 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		F70B148B2B07688F00629B50 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F70B148D2B07768F00629B50 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		F70B148F2B07792300629B50 /* ChangeSignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSignView.swift; sourceTree = "<group>"; };
 		F70B14912B08C2A800629B50 /* ForesightEmpyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForesightEmpyView.swift; sourceTree = "<group>"; };
 		F722D3302B037C0E00076005 /* BoundsAnchorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundsAnchorKey.swift; sourceTree = "<group>"; };
 		F722D3322B0385D100076005 /* AppBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBannerView.swift; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 			children = (
 				F70B148D2B07768F00629B50 /* SettingsViewModel.swift */,
 				F70B148B2B07688F00629B50 /* SettingsView.swift */,
-				F70B148F2B07792300629B50 /* ChangeSignView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -773,7 +770,6 @@
 				F79062F52AFD2CAB008F7851 /* MainView.swift in Sources */,
 				F7CA5A3D2AFE239000A44597 /* ForesightViewModel.swift in Sources */,
 				F732BF032AFD40C300C846B6 /* Foresight.swift in Sources */,
-				F70B14902B07792300629B50 /* ChangeSignView.swift in Sources */,
 				F70B148C2B07688F00629B50 /* SettingsView.swift in Sources */,
 				F732BF0A2AFD56F700C846B6 /* FirestoreService.swift in Sources */,
 				F722D33D2B04B50600076005 /* User.swift in Sources */,

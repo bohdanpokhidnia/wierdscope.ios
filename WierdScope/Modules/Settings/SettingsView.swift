@@ -13,16 +13,13 @@ struct SettingsView: View {
     @StateObject private var viewModel = SettingsViewModel()
     @Query private var users: [User]
     
-    var sign: Sign
-    
     var body: some View {
         List {
             NavigationLink {
-                ChangeSignView(users: users)
-                    .environmentObject(viewModel)
+                ChooseSignView(isEditMode: true, users: users)
             } label: {
                 settingsListItem(
-                    image: Image(uiImage: sign.emoji.toImage(size: CGSize(width: 20, height: 20))!),
+                    image: Image(uiImage: "ℹ️".toImage(size: CGSize(width: 20, height: 20))!),
                     text: "settings_change_sign".localize
                 )
             }
@@ -69,6 +66,6 @@ struct SettingsView: View {
 
 #Preview {
     FullSwipeNavigationStack {
-        SettingsView(sign: .capricorn)
+        SettingsView()
     }
 }

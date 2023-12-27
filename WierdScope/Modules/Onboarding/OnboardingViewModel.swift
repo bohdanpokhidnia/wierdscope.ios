@@ -29,15 +29,15 @@ final class OnboardingViewModel: ObservableObject {
         numberOfDaysInMonth = days
     }
     
-    func fetchSign(numberOfDay: String, monthName: String) {
+    func fetchSign(numberOfDay: String, monthName: String) -> Sign {
         guard let day = Int(numberOfDay) else {
-            return
+            return .none
         }
         guard let month = month(by: monthName) else {
-            return
+            return .none
         }
         
-        sign = switch month.number {
+        let sign: Sign = switch month.number {
         case 1: day > 20 ? .aquarius : .capricorn
         case 2: day > 19 ? .pisces : .aquarius
         case 3: day > 21 ? .aries : .pisces
@@ -52,6 +52,8 @@ final class OnboardingViewModel: ObservableObject {
         case 12: day > 22 ? .capricorn : .sagittarius
         default: .ophiuchus
         }
+        
+        return sign
     }
 }
 

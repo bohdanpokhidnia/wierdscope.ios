@@ -11,10 +11,14 @@ import SwiftData
 @Model
 class User {
     var name: String
+    var month: String
+    var numberOfBirthday: String
     var sign: Sign
     
-    init(name: String, sign: Sign) {
+    init(name: String, month: String, numberOfBirthday: String, sign: Sign) {
         self.name = name
+        self.month = month
+        self.numberOfBirthday = numberOfBirthday
         self.sign = sign
     }
 }
