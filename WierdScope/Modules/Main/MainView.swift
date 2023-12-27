@@ -9,10 +9,9 @@ import SwiftUI
 import SwiftData
 
 struct MainView: View {
+    @Query private var users: [User]
     @State private var isSharePresented: Bool = false
     var selectedSign: Sign?
-    
-    @Query private var users: [User]
     
     var body: some View {
         if let sign = selectedSign ?? users.first?.sign {
@@ -23,6 +22,13 @@ struct MainView: View {
                         sign: sign,
                         safeArea: proxy.safeAreaInsets
                     )
+                    .overlay(alignment: .topLeading) {
+                        Text("\("hello".localize) \(users.first?.name ?? "Anonim")")
+                            .padding(.top, proxy.safeAreaInsets.top + 16)
+                            .padding(.leading, 16)
+                            .font(.montserrat(size: 22))
+                            .opacity(isSharePresented ? 0.0 : 1.0)
+                    }
                     .overlay(alignment: .topTrailing) {
                         VStack(spacing: 8) {
                             NavigationLink {

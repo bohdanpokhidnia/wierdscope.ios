@@ -4,6 +4,16 @@
     "" : {
 
     },
+    "%@ %@" : {
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
     "april" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -77,6 +87,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Шукаємо нові, що впораються з вашим ритмом життя"
+          }
+        }
+      }
+    },
+    "hello" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привіт"
           }
         }
       }

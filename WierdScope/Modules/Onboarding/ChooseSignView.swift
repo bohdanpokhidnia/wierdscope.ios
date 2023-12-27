@@ -100,18 +100,17 @@ struct ChooseSignView: View {
                 viewModel.didSelect(monthName: user.month)
             }
         }
-        .onChange(of: month) { (old, _) in
+        .onChange(of: month) {
             guard let selectedMonth = month else {
                 return
             }
-            guard old != nil else {
+            
+            guard !isEditMode else {
                 return
             }
             
-            if numberOfDay != nil {
-                numberOfDay = nil
-                viewModel.didSelect(monthName: selectedMonth)
-            }
+            numberOfDay = nil
+            viewModel.didSelect(monthName: selectedMonth)
         }
         .navigationDestination(item: $viewModel.sign) { (sign) in
             MainView(selectedSign: sign)
