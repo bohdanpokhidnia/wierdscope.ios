@@ -38,7 +38,7 @@ struct Provider: TimelineProvider {
         let widgetFamily = context.family
         
         if users.isEmpty {
-            let emptyTimeline = emptyTimeline(for: widgetFamily)
+            let emptyTimeline = emptyTimeline(text: "widget_empty_sign".localize, for: widgetFamily)
             completion(emptyTimeline)
         } else {
             guard let user = users.first else {
@@ -47,32 +47,39 @@ struct Provider: TimelineProvider {
             let today = Date.now.toString(for: .ddMMyyyy)
             let firestoreService = FirestoreService()
             
-            firestoreService.fetchItems(Foresight.self, from: .horoscope) { (foresights) in
-                guard let foresight = foresights?.first(where: {
-                    $0.sign == user.sign && $0.date.contains(today)
-                }) else {
-                    let emptyTimeline = emptyTimeline(for: widgetFamily)
+            Task {
+                do {
+                    let foresights = try await firestoreService.fetchItems(Foresight.self, from: .horoscope)
+                    guard let foresight = foresights.first(where: {
+                        $0.sign == user.sign && $0.date.contains(today)
+                    }) else {
+                        let emptyTimeline = emptyTimeline(text: "widget_empty_sign".localize, for: widgetFamily)
+                        completion(emptyTimeline)
+                        return
+                    }
+                    
+                    let foresightEntry = SimpleEntry(
+                        date: .now,
+                        foresight: foresight.foresight.first ?? "empty foresight",
+                        fontSize: fontSize
+                    )
+                    
+                    let timeline = Timeline(entries: [foresightEntry], policy: .atEnd)
+                    completion(timeline)
+                } catch {
+                    let emptyTimeline = emptyTimeline(text: error.localizedDescription, for: widgetFamily)
                     completion(emptyTimeline)
-                    return
+                    print("[dev] error: \(error.localizedDescription)")
                 }
-                
-                let foresightEntry = SimpleEntry(
-                    date: .now,
-                    foresight: foresight.foresight.first ?? "empty foresight",
-                    fontSize: fontSize
-                )
-                
-                let timeline = Timeline(entries: [foresightEntry], policy: .atEnd)
-                completion(timeline)
             }
         }
     }
     
-    private func emptyTimeline(for family: WidgetFamily) -> Timeline<Entry> {
+    private func emptyTimeline(text: String, for family: WidgetFamily) -> Timeline<Entry> {
         let fontSize = fontSize(for: family)
         let emptyEntry = SimpleEntry(
             date: .now,
-            foresight: "widget_empty_sign".localize,
+            foresight: text,
             fontSize: fontSize
         )
         let timeline = Timeline(entries: [emptyEntry], policy: .atEnd)
@@ -140,21 +147,8 @@ struct WierdScopeWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview(as: .systemMedium) {
     WierdScopeWidget()
 } timeline: {
-    SimpleEntry(date: .now, foresight: "continue".localize, fontSize: 16)
+    SimpleEntry(date: .now, foresight: "Capricorn is great", fontSize: 22)
 }
-
-//
-//#Preview(as: .systemMedium) {
-//    WierdScopeWidget()
-//} timeline: {
-//    SimpleEntry(date: .now, foresight: "Козероги топ", fontSize: 22)
-//}
-//
-//#Preview(as: .systemLarge) {
-//    WierdScopeWidget()
-//} timeline: {
-//    SimpleEntry(date: .now, foresight: "Козероги топ", fontSize: 26)
-//}

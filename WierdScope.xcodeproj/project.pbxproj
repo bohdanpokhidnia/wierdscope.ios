@@ -310,7 +310,7 @@
 		F732BF082AFD56C600C846B6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				F7CA5A3E2AFE288300A44597 /* Firestore */,
+				F7CA5A3E2AFE288300A44597 /* Database */,
 				F7F5C29A2B0F412100ACD69D /* ADMob */,
 			);
 			path = Services;
@@ -359,6 +359,22 @@
 				F7640D782B0C90EF00278BCF /* GalleryView.swift */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		F76789AD2B4AA90F00CE1C4A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F76789AE2B4AA91500CE1C4A /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F732BF092AFD56F700C846B6 /* FirestoreService.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		F775BA132B08CAC50049E391 /* Frameworks */ = {
@@ -456,15 +472,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F7CA5A3E2AFE288300A44597 /* Firestore */ = {
+		F7CA5A3E2AFE288300A44597 /* Database */ = {
 			isa = PBXGroup;
 			children = (
 				F7CA5A412AFE28AE00A44597 /* FirestoreCollection.swift */,
 				F7CA5A432AFE28BE00A44597 /* FirestoreError.swift */,
-				F7CA5A3F2AFE289400A44597 /* FirestoreServiceProtocol.swift */,
-				F732BF092AFD56F700C846B6 /* FirestoreService.swift */,
+				F76789AD2B4AA90F00CE1C4A /* Protocols */,
+				F76789AE2B4AA91500CE1C4A /* Implementation */,
 			);
-			path = Firestore;
+			path = Database;
 			sourceTree = "<group>";
 		};
 		F7CA5A482AFE3DA300A44597 /* Fonts */ = {

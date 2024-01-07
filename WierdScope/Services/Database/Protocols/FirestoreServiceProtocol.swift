@@ -9,6 +9,4 @@ import Foundation
 
 protocol FirestoreServiceProtocol {
     func fetchItems<CollectionItem: Decodable>(_ item: CollectionItem.Type, from collection: FirestoreCollection) async throws -> [CollectionItem]
-    
-    func fetchItems<CollectionItem: Decodable>(_ item: CollectionItem.Type, from collection: FirestoreCollection, completion: @escaping (([CollectionItem]?) -> Void))
 }
