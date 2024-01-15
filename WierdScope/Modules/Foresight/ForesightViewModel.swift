@@ -37,10 +37,16 @@ final class ForesightViewModel: ObservableObject {
             do {
                 let foresights = try await firestoreService.fetchItems(Foresight.self, from: .horoscope)
                 
-                if let todayForesight = todayForesights(from: foresights, for: sign) {
+                if let todayForesight = firestoreService.filter(foresights, at: .today)
+                    .first(where: { $0.sign == sign })
+                    .map({ $0.foresight })
+                {
                     self.foresights = todayForesight
                     state = .loaded
-                } else if let lastForesights = lastForesights(from: foresights, for: sign) {
+                } else if let lastForesights = firestoreService.filter(foresights, at: .last)
+                    .first(where: { $0.sign == sign })
+                    .map({ $0.foresight })
+                {
                     self.foresights = lastForesights
                     state = .loaded
                 } else {
@@ -54,33 +60,5 @@ final class ForesightViewModel: ObservableObject {
                 state = .failed(message: error.localizedDescription)
             }
         }
-    }
-}
-
-// MARK: - Filtering foresights
-
-private extension ForesightViewModel {
-    func todayForesights(from foresights: [Foresight], for sign: Sign) -> [String]? {
-        let today = Date.now.toString(for: .ddMMyyyy)
-        let todayForesights = foresights
-            .filter({ $0.sign == sign })
-            .first(where: { $0.date.contains(today) })
-            .map { $0.foresight }
-        return todayForesights
-    }
-    
-    func sortForesightByDate(_ firstForesight: Foresight, _ secondForesight: Foresight) -> Bool {
-        let firstForesightDate = firstForesight.date.toDate(for: .ddMMyyyy) ?? .now
-        let secondForesightDate = secondForesight.date.toDate(for: .ddMMyyyy) ?? .now
-        return firstForesightDate > secondForesightDate
-    }
-    
-    func lastForesights(from foresights: [Foresight], for sign: Sign) -> [String]? {
-        let lastForesights = foresights
-            .filter({ $0.sign == sign })
-            .sorted(by: sortForesightByDate)
-            .first
-            .map { $0.foresight }
-        return lastForesights
     }
 }

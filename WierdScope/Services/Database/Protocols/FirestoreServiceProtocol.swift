@@ -8,5 +8,10 @@
 import Foundation
 
 protocol FirestoreServiceProtocol {
-    func fetchItems<CollectionItem: Decodable>(_ item: CollectionItem.Type, from collection: FirestoreCollection) async throws -> [CollectionItem]
+    func fetchItems<CollectionItem: FirestoreCollectionItem>(
+        _ item: CollectionItem.Type,
+        from collection: FirestoreCollection
+    ) async throws -> [CollectionItem]
+    
+    func filter<CollectionItem: FirestoreCollectionItem>(_ items: [CollectionItem], at policy: FirestoreFetchPolicy) -> [CollectionItem]
 }

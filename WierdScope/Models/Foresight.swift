@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Foresight: Codable {
+struct Foresight: FirestoreCollectionItem, Encodable {
     let id: String
     let foresight: [String]
     let sign: Sign

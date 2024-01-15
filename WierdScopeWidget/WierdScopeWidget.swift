@@ -44,27 +44,36 @@ struct Provider: TimelineProvider {
             guard let user = users.first else {
                 return
             }
+            let sign = user.sign
             let today = Date.now.toString(for: .ddMMyyyy)
             let firestoreService = FirestoreService()
             
             Task {
                 do {
                     let foresights = try await firestoreService.fetchItems(Foresight.self, from: .horoscope)
-                    guard let foresight = foresights.first(where: {
-                        $0.sign == user.sign && $0.date.contains(today)
-                    }) else {
-                        let emptyTimeline = emptyTimeline(text: "widget_empty_sign".localize, for: widgetFamily)
-                        completion(emptyTimeline)
-                        return
+                    var foresightEntries = [SimpleEntry]()
+                    
+                    if let todayForesights = firestoreService.filter(foresights, at: .today)
+                        .first(where: { $0.sign == sign })
+                        .map({ $0.foresight })
+                    {
+                        foresightEntries.append(SimpleEntry(
+                            date: .now,
+                            foresight: todayForesights.first ?? "",
+                            fontSize: fontSize
+                        ))
+                    } else if let lastForesights = firestoreService.filter(foresights, at: .last)
+                        .first(where: { $0.sign == sign })
+                        .map({ $0.foresight })
+                    {
+                        foresightEntries.append(SimpleEntry(
+                            date: .now,
+                            foresight: lastForesights.first ?? "",
+                            fontSize: fontSize
+                        ))
                     }
                     
-                    let foresightEntry = SimpleEntry(
-                        date: .now,
-                        foresight: foresight.foresight.first ?? "empty foresight",
-                        fontSize: fontSize
-                    )
-                    
-                    let timeline = Timeline(entries: [foresightEntry], policy: .atEnd)
+                    let timeline = Timeline(entries: foresightEntries, policy: .atEnd)
                     completion(timeline)
                 } catch {
                     let emptyTimeline = emptyTimeline(text: error.localizedDescription, for: widgetFamily)
@@ -115,7 +124,7 @@ struct SimpleEntry: TimelineEntry {
     let fontSize: CGFloat
 }
 
-struct WierdScopeWidgetEntryView : View {
+struct WierdScopeWidgetEntryView: View {
     var entry: Provider.Entry
 
     var body: some View {
@@ -135,7 +144,10 @@ struct WierdScopeWidget: Widget {
     }
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+        StaticConfiguration(
+            kind: kind,
+            provider: Provider()
+        ) { (entry) in
             WierdScopeWidgetEntryView(entry: entry)
                 .containerBackground(for: .widget) {
                     Color.widgetBackground
