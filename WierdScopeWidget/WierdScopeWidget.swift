@@ -45,7 +45,6 @@ struct Provider: TimelineProvider {
                 return
             }
             let sign = user.sign
-            let today = Date.now.toString(for: .ddMMyyyy)
             let firestoreService = FirestoreService()
             
             Task {
